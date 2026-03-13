@@ -4,6 +4,9 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PID_DIR="$REPO_ROOT/.dev"
 METRICS_FILE="$PID_DIR/metrics.log"
+source "$REPO_ROOT/eng/scripts/lib/dev-tools.sh"
+
+mkdir -p "$PID_DIR"
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 now_ms() { date +%s%3N 2>/dev/null || echo $(( $(date +%s) * 1000 )); }
@@ -49,6 +52,12 @@ echo "============================================"
 echo "" >> "$METRICS_FILE"
 echo "── STOP $(date '+%Y-%m-%d %H:%M:%S') ──" >> "$METRICS_FILE"
 
+DOCKER_BIN="$(resolve_docker_bin || true)"
+COMPOSE_FILE=""
+if [ -n "${DOCKER_BIN:-}" ]; then
+  COMPOSE_FILE="$(docker_compose_file_path "$REPO_ROOT/docker-compose.yml")"
+fi
+
 # ── 1. Frontend ─────────────────────────────────────────────────────────────
 echo ""
 echo "[1/3] Frontend..."
@@ -67,7 +76,13 @@ log_metric ".NET API shutdown" "$(elapsed $STEP_START)"
 echo ""
 echo "[3/3] PostgreSQL..."
 STEP_START=$(now_ms)
-docker compose -f "$REPO_ROOT/docker-compose.yml" stop
+if [ -z "${DOCKER_BIN:-}" ]; then
+  echo "  Docker CLI not found, skipping PostgreSQL shutdown."
+elif docker_is_ready; then
+  docker_compose -f "$COMPOSE_FILE" stop
+else
+  echo "  Docker engine unavailable, skipping PostgreSQL shutdown."
+fi
 log_metric "PostgreSQL shutdown" "$(elapsed $STEP_START)"
 
 # ── Summary ─────────────────────────────────────────────────────────────────

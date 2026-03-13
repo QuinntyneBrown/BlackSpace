@@ -5,8 +5,15 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 PID_DIR="$REPO_ROOT/.dev"
 LOG_DIR="$PID_DIR/logs"
 METRICS_FILE="$PID_DIR/metrics.log"
+source "$REPO_ROOT/eng/scripts/lib/dev-tools.sh"
 
 mkdir -p "$PID_DIR" "$LOG_DIR"
+
+DOCKER_BIN="$(require_resolved_command "Docker CLI" resolve_docker_bin)"
+DOTNET_BIN="$(require_resolved_command ".NET CLI" resolve_dotnet_bin)"
+NPX_BIN="$(require_resolved_command "npx" resolve_npx_bin)"
+HTTP_PROBE_BIN="$(require_resolved_command "HTTP probe client" resolve_http_probe_bin)"
+COMPOSE_FILE="$(docker_compose_file_path "$REPO_ROOT/docker-compose.yml")"
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 now_ms() { date +%s%3N 2>/dev/null || echo $(( $(date +%s) * 1000 )); }
@@ -45,7 +52,8 @@ echo ""
 echo "[1/3] Starting PostgreSQL..."
 STEP_START=$(now_ms)
 
-docker compose -f "$REPO_ROOT/docker-compose.yml" up -d --wait
+ensure_docker_ready
+docker_compose -f "$COMPOSE_FILE" up -d --wait
 
 log_metric "PostgreSQL (docker)" "$(elapsed $STEP_START)"
 
@@ -55,13 +63,13 @@ echo "[2/3] Starting .NET API (http://localhost:5000)..."
 STEP_START=$(now_ms)
 
 cd "$REPO_ROOT/src/BlackSpace.Api"
-dotnet run --urls "http://localhost:5000" > "$LOG_DIR/backend.log" 2>&1 &
+"$DOTNET_BIN" run --urls "http://localhost:5000" > "$LOG_DIR/backend.log" 2>&1 &
 BACKEND_PID=$!
 echo "$BACKEND_PID" > "$PID_DIR/backend.pid"
 
 # Wait for the API to respond
 RETRIES=0
-until curl -sf http://localhost:5000/api/health > /dev/null 2>&1; do
+until probe_http_ready "http://localhost:5000/api/health"; do
   RETRIES=$((RETRIES + 1))
   if [ $RETRIES -ge 60 ]; then
     echo "  Backend failed to start within 60s. Check $LOG_DIR/backend.log"
@@ -78,13 +86,13 @@ echo "[3/3] Starting Angular (http://localhost:4200)..."
 STEP_START=$(now_ms)
 
 cd "$REPO_ROOT/src/BlackSpace.Web"
-npx ng serve blackspace --port 4200 > "$LOG_DIR/frontend.log" 2>&1 &
+"$NPX_BIN" ng serve blackspace --port 4200 > "$LOG_DIR/frontend.log" 2>&1 &
 FRONTEND_PID=$!
 echo "$FRONTEND_PID" > "$PID_DIR/frontend.pid"
 
 # Wait for Angular dev server to respond
 RETRIES=0
-until curl -sf http://localhost:4200 > /dev/null 2>&1; do
+until probe_http_ready "http://localhost:4200"; do
   RETRIES=$((RETRIES + 1))
   if [ $RETRIES -ge 120 ]; then
     echo "  Frontend failed to start within 120s. Check $LOG_DIR/frontend.log"
