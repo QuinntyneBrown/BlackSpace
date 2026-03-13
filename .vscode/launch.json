@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: .NET API",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/BlackSpace.Api/bin/Debug/net9.0/BlackSpace.Api.dll",
+      "args": ["--urls", "http://localhost:5000"],
+      "cwd": "${workspaceFolder}/src/BlackSpace.Api",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "preLaunchTask": "build-api",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": "Debug: Angular (Chrome)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:4200",
+      "webRoot": "${workspaceFolder}/src/BlackSpace.Web",
+      "sourceMapPathOverrides": {
+        "webpack:/*": "${webRoot}/*"
+      }
+    },
+    {
+      "name": "Debug: .NET API + Angular",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/BlackSpace.Api/bin/Debug/net9.0/BlackSpace.Api.dll",
+      "args": ["--urls", "http://localhost:5000"],
+      "cwd": "${workspaceFolder}/src/BlackSpace.Api",
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "preLaunchTask": "build-api",
+      "console": "integratedTerminal",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+        "webRoot": "${workspaceFolder}/src/BlackSpace.Web",
+        "uriFormat": "http://localhost:4200"
+      }
+    }
+  ]
+}

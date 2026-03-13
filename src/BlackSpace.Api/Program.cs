@@ -15,8 +15,16 @@ builder.Host.UseSerilog((context, configuration) =>
     configuration.ReadFrom.Configuration(context.Configuration));
 
 // Database
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
+var dbProvider = builder.Configuration.GetValue<string>("Database:Provider") ?? "Sqlite";
+
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    if (dbProvider.Equals("PostgreSQL", StringComparison.OrdinalIgnoreCase))
+        options.UseNpgsql(connectionString);
+    else
+        options.UseSqlite(connectionString);
+});
 
 // Repositories
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
