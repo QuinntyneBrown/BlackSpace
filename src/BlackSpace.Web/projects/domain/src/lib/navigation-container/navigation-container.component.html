@@ -12,11 +12,12 @@
       @for (link of menuLinks; track link.section) {
         <a
           class="nav-link"
+          [class.hide-tablet]="link.hideTablet"
           [href]="'#' + link.section"
           (click)="onNavigate($event, link.section)"
         >{{ link.label }}</a>
       }
-      <lib-button-primary label="Join" (clicked)="onJoinClick()" />
+      <lib-button-primary label="Join" size="small" (clicked)="onJoinClick()" />
     </div>
 
     <button class="hamburger" (click)="toggleMobileMenu()" aria-label="Open menu">

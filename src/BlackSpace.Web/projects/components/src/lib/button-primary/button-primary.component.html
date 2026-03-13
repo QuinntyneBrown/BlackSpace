@@ -3,6 +3,7 @@
   [disabled]="disabled() || loading()"
   [class.loading]="loading()"
   [class.disabled]="disabled()"
+  [class.small]="size() === 'small'"
   (click)="onClick()"
 >
   @if (loading()) {

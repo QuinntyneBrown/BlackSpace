@@ -10,6 +10,7 @@ export class ButtonPrimaryComponent {
   disabled = input<boolean>(false);
   loading = input<boolean>(false);
   type = input<'button' | 'submit'>('button');
+  size = input<'default' | 'small'>('default');
 
   clicked = output<void>();
 

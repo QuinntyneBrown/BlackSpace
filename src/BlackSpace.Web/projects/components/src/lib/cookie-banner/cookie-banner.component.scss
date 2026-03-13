@@ -17,10 +17,11 @@
 }
 .actions {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   flex-shrink: 0;
 }
 .actions ::ng-deep button {
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 13px;
+  border-radius: 6px;
 }

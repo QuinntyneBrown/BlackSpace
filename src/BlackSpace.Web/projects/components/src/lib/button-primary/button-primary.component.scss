@@ -27,6 +27,11 @@ button.disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
+button.small {
+  font-size: 14px;
+  padding: 10px 24px;
+  border-radius: 6px;
+}
 .spinner {
   width: 16px;
   height: 16px;

@@ -41,7 +41,7 @@ export class NavigationContainerComponent implements OnInit, OnDestroy {
 
   readonly menuLinks: MenuLink[] = [
     { label: 'About', section: 'about' },
-    { label: "Who It's For", section: 'who-its-for' },
+    { label: "Who It's For", section: 'who-its-for', hideTablet: true },
     { label: 'What We Do', section: 'what-we-do' },
   ];
 

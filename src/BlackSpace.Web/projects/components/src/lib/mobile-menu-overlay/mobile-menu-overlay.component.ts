@@ -5,6 +5,7 @@ import { ButtonPrimaryComponent } from '../button-primary/button-primary.compone
 export interface MenuLink {
   label: string;
   section: string;
+  hideTablet?: boolean;
 }
 
 @Component({

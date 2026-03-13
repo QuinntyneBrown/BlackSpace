@@ -11,6 +11,12 @@
   margin-bottom: 8px;
 }
 .required {
+  color: #8A8A9A;
+}
+.field-label.has-error {
+  color: #FF3B30;
+}
+.field-label.has-error .required {
   color: #FF3B30;
 }
 .field-control {
