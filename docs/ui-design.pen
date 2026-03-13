@@ -1,0 +1,4091 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "zVad5",
+      "x": 0,
+      "y": 0,
+      "name": "Desktop - 1440px",
+      "width": 1440,
+      "fill": "#07080F",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "DKf78",
+          "name": "NavBar",
+          "width": "fill_container",
+          "fill": "#07080FE0",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#FFFFFF08"
+          },
+          "padding": [
+            16,
+            64
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "RlQWp",
+              "name": "navLogo",
+              "fill": "#FFFFFF",
+              "content": "BLACK SPACE CANADA",
+              "fontFamily": "Sora",
+              "fontSize": 16,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "qzO1l",
+              "name": "NavLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "IrVIz",
+                  "name": "navLink1",
+                  "fill": "#8A8A9A",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "k17Zr",
+                  "name": "navLink2",
+                  "fill": "#8A8A9A",
+                  "content": "Who It's For",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "VFWvA",
+                  "name": "navLink3",
+                  "fill": "#8A8A9A",
+                  "content": "What We Do",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "id": "tnTMg",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "padding": [
+                    10,
+                    24
+                  ],
+                  "cornerRadius": 6,
+                  "name": "navCta",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S62OE",
+          "name": "Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1.2,
+              "height": 1.2
+            },
+            "colors": [
+              {
+                "color": "#0D1B3E",
+                "position": 0
+              },
+              {
+                "color": "#07080F",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0.4
+            }
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            120,
+            200
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "IlwBc",
+              "name": "heroTag",
+              "fill": "#4F9CF710",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4F9CF730"
+              },
+              "gap": 8,
+              "padding": [
+                8,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "mwEDN",
+                  "name": "heroTagDot",
+                  "fill": "#4F9CF7",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "8RaCb",
+                  "name": "heroTagText",
+                  "fill": "#4F9CF7",
+                  "content": "Building Canada's Space Future",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.5
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "s7LhL",
+              "name": "heroHeadline",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "Black Canadians in\nSpace & Defence",
+              "lineHeight": 1.05,
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 64,
+              "fontWeight": "700",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "4eQPz",
+              "name": "heroSub",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "A community for Black Canadian engineers, scientists, and technologists\nbuilding Canada's space and defence systems.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 20
+            },
+            {
+              "type": "frame",
+              "id": "uEhrn",
+              "name": "heroBtns",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "RMrej",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "name": "heroPrimary",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join the Community"
+                    }
+                  }
+                },
+                {
+                  "id": "mlaZA",
+                  "type": "ref",
+                  "ref": "LTVeU",
+                  "name": "heroSecondary",
+                  "descendants": {
+                    "C1gSl": {
+                      "content": "Learn More"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1OpbO",
+          "name": "Problem Section",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            200
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "kBgvH",
+              "name": "probLabel",
+              "fill": "#4F9CF7",
+              "content": "WHY THIS EXISTS",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "xzxmT",
+              "name": "probHeadline",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 800,
+              "content": "Canada's space sector is growing.\nBlack Canadians are missing from it.",
+              "lineHeight": 1.15,
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 40,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "frame",
+              "id": "06qMi",
+              "name": "probContent",
+              "width": 720,
+              "layout": "vertical",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oaTZE",
+                  "name": "probP1",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Canada's space sector supports over 12,000 jobs and is growing fast. Canadarm3, Lunar Gateway, defence modernization, satellite programs — billions in investment are reshaping the industry.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 17
+                },
+                {
+                  "type": "text",
+                  "id": "VMfbO",
+                  "name": "probP2",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Yet Black Canadians remain underrepresented in these programs — especially on the engineering and technology side. Existing organizations serve adjacent communities, but nothing exists for Black Canadian engineers and technologists in space and defence specifically.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 17
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "MH0Wm",
+              "name": "probStat",
+              "fill": "#4F9CF708",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4F9CF720"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                32,
+                48
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "WOsJp",
+                  "name": "probStatNum",
+                  "fill": "#4F9CF7",
+                  "content": "0",
+                  "fontFamily": "Sora",
+                  "fontSize": 64,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "8AQ0Z",
+                  "name": "probStatLabel",
+                  "fill": "#8A8A9A",
+                  "content": "Black Canadian astronauts to date",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "wAhBb",
+              "name": "probP3",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Many of us have been \"the only one in the room.\"\nThis community changes that.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 19,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "suvCA",
+          "name": "Who Its For Section",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "lSlPa",
+              "name": "whoLabel",
+              "fill": "#4F9CF7",
+              "content": "WHO IT'S FOR",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "tk93V",
+              "name": "whoHeadline",
+              "fill": "#FFFFFF",
+              "content": "Is this community for you?",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 40,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "frame",
+              "id": "zaAAE",
+              "name": "AudienceGrid",
+              "width": "fill_container",
+              "gap": 20,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "knFqO",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "card1",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "code"
+                    },
+                    "GOL1D": {
+                      "content": "Software & Systems Engineers"
+                    },
+                    "yKhrG": {
+                      "content": "Writing flight software, ground systems, C2 platforms, simulations"
+                    }
+                  }
+                },
+                {
+                  "id": "z8zkb",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "card2",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "wrench"
+                    },
+                    "GOL1D": {
+                      "content": "Hardware & Mechanical Engineers"
+                    },
+                    "yKhrG": {
+                      "content": "Designing, testing, and building space and defence hardware"
+                    }
+                  }
+                },
+                {
+                  "id": "sl9ma",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "card3",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "graduation-cap"
+                    },
+                    "GOL1D": {
+                      "content": "Students & Early-Career"
+                    },
+                    "yKhrG": {
+                      "content": "Studying engineering, CS, physics, or related fields and targeting the sector"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "1Wd44",
+              "name": "AudienceGrid2",
+              "width": "fill_container",
+              "gap": 20,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "yzx02",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "card4",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "briefcase"
+                    },
+                    "GOL1D": {
+                      "content": "Entrepreneurs & Contractors"
+                    },
+                    "yKhrG": {
+                      "content": "Pursuing contracts in the Canadian defence and space supply chain"
+                    }
+                  }
+                },
+                {
+                  "id": "HsVIJ",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "card5",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "flask-conical"
+                    },
+                    "GOL1D": {
+                      "content": "Scientists & Researchers"
+                    },
+                    "yKhrG": {
+                      "content": "Working on space-related projects at Canadian institutions or agencies"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "938nZ",
+          "name": "What We Do Section",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "4rn8y",
+              "name": "whatLabel",
+              "fill": "#4F9CF7",
+              "content": "WHAT WE DO",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "WZ1hA",
+              "name": "whatHeadline",
+              "fill": "#FFFFFF",
+              "content": "More than a logo and a mission statement.",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 40,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "frame",
+              "id": "Y3rAQ",
+              "name": "PillarGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "msQGZ",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "p1",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "users"
+                    },
+                    "NQWlj": {
+                      "content": "Connect"
+                    },
+                    "zMyh7": {
+                      "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work. Who are you, what are you working on, what do you need?"
+                    }
+                  }
+                },
+                {
+                  "id": "fy44D",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "p2",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "megaphone"
+                    },
+                    "NQWlj": {
+                      "content": "Share"
+                    },
+                    "zMyh7": {
+                      "content": "Weekly posts covering CSA contract announcements, DND procurement opportunities, job openings at MDA, Telesat, CAE, L3Harris, policy updates, scholarships, and internships."
+                    }
+                  }
+                },
+                {
+                  "id": "mrYaK",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "p3",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "star"
+                    },
+                    "NQWlj": {
+                      "content": "Elevate"
+                    },
+                    "zMyh7": {
+                      "content": "Spotlights on Black Canadians already in the sector. Making visible the people and careers that the industry rarely highlights."
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "62us8",
+          "name": "Signup Section",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            100,
+            200
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "FtrIA",
+              "name": "signupLabel",
+              "fill": "#4F9CF7",
+              "content": "JOIN US",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "jOClC",
+              "name": "signupHeadline",
+              "fill": "#FFFFFF",
+              "content": "Join Black Space Canada",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 40,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "frame",
+              "id": "VH70v",
+              "name": "FormCard",
+              "width": 520,
+              "fill": "#0D0E18",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1A1A2E"
+              },
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 40,
+              "children": [
+                {
+                  "id": "t4Nlw",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "inp1",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Full Name *"
+                    },
+                    "hvZ2S": {
+                      "content": "Enter your full name"
+                    }
+                  }
+                },
+                {
+                  "id": "6uIkj",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "inp2",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Email *"
+                    },
+                    "hvZ2S": {
+                      "content": "you@example.com"
+                    }
+                  }
+                },
+                {
+                  "id": "EQtoB",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "inp3",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Current Role / Title"
+                    },
+                    "hvZ2S": {
+                      "content": "e.g. Software Engineer"
+                    }
+                  }
+                },
+                {
+                  "id": "R2Avz",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "inp4",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Organization"
+                    },
+                    "hvZ2S": {
+                      "content": "e.g. MDA Space"
+                    }
+                  }
+                },
+                {
+                  "id": "ADi1d",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "inp5",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "How did you hear about us?"
+                    },
+                    "hvZ2S": {
+                      "content": "Select one..."
+                    }
+                  }
+                },
+                {
+                  "id": "nxODp",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "width": "fill_container",
+                  "name": "submitBtn",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join Black Space Canada",
+                      "fontSize": 16
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "hXIgs",
+                  "name": "reassurance",
+                  "fill": "#52526A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "We'll send you a welcome email with a link to our LinkedIn group and details on the next virtual meetup. No spam, ever.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZJnwC",
+          "name": "Founder Section",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "gap": 40,
+          "padding": [
+            80,
+            200
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "m9Wal",
+              "name": "FounderPhoto",
+              "metadata": {
+                "type": "unsplash",
+                "username": "artmustafi",
+                "link": "https://unsplash.com/@artmustafi",
+                "author": "Mustafi Numann"
+              },
+              "width": 100,
+              "height": 100,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1767066972646-840213f874e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMzOTkwNDJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 50,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#4F9CF730"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "9lKH3",
+              "name": "founderInfo",
+              "width": 500,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nNF8B",
+                  "name": "founderName",
+                  "fill": "#FFFFFF",
+                  "content": "Quinn Brown",
+                  "fontFamily": "Sora",
+                  "fontSize": 22,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "dfj1w",
+                  "name": "founderTitle",
+                  "fill": "#4F9CF7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Senior .NET Consultant & Software Quality Lead, MDA Space",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "6ssdM",
+                  "name": "founderBio",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Currently building software for Canadarm3 on NASA's Lunar Gateway program. Started Black Space Canada because this community should have existed years ago.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15
+                },
+                {
+                  "type": "frame",
+                  "id": "l44rH",
+                  "name": "founderLink",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "O53Wu",
+                      "name": "founderLinkIcon",
+                      "width": 16,
+                      "height": 16,
+                      "iconFontName": "linkedin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4F9CF7"
+                    },
+                    {
+                      "type": "text",
+                      "id": "WxMm9",
+                      "name": "founderLinkText",
+                      "fill": "#4F9CF7",
+                      "content": "Connect on LinkedIn",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DN6Z6",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#FFFFFF08"
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            48,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "rr6p7",
+              "name": "footerTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "8LJAR",
+                  "name": "footerLogo",
+                  "fill": "#FFFFFF",
+                  "content": "BLACK SPACE CANADA",
+                  "fontFamily": "Sora",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "2HGXs",
+                  "name": "footerLinks",
+                  "gap": 24,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "SB91J",
+                      "name": "footerEmail",
+                      "fill": "#8A8A9A",
+                      "content": "hello@blackspace.ca",
+                      "fontFamily": "Inter",
+                      "fontSize": 13
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CGhNh",
+                      "name": "footerLi",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "eiYL9",
+                          "name": "footerLiIcon",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#8A8A9A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "940w2",
+                          "name": "footerLiText",
+                          "fill": "#8A8A9A",
+                          "content": "LinkedIn Group",
+                          "fontFamily": "Inter",
+                          "fontSize": 13
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "DJTNY",
+              "name": "footerDisclaimer",
+              "fill": "#52526A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 12
+            },
+            {
+              "type": "text",
+              "id": "8q1sG",
+              "name": "footerCopy",
+              "fill": "#3A3A4A",
+              "content": "© 2026 Black Space Canada. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "dI2ak",
+      "x": 1600,
+      "y": 0,
+      "name": "Tablet - 768px",
+      "width": 768,
+      "fill": "#07080F",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "eoWSV",
+          "name": "TabNav",
+          "width": "fill_container",
+          "fill": "#07080FE0",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#FFFFFF08"
+          },
+          "padding": [
+            14,
+            32
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "6PzMw",
+              "name": "tabNavLogo",
+              "fill": "#FFFFFF",
+              "content": "BLACK SPACE CANADA",
+              "fontFamily": "Sora",
+              "fontSize": 14,
+              "fontWeight": "700",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "B77Zh",
+              "name": "tabNavRight",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iZRTV",
+                  "name": "tabNl1",
+                  "fill": "#8A8A9A",
+                  "content": "About",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "oo3H2",
+                  "name": "tabNl2",
+                  "fill": "#8A8A9A",
+                  "content": "What We Do",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                },
+                {
+                  "id": "Ace6n",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "cornerRadius": 6,
+                  "name": "tabNavCta",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join",
+                      "fontSize": 13
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T2lTe",
+          "name": "TabHero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1.2,
+              "height": 1.2
+            },
+            "colors": [
+              {
+                "color": "#0D1B3E",
+                "position": 0
+              },
+              {
+                "color": "#07080F",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0.4
+            }
+          },
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            80,
+            48
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "9edW8",
+              "name": "tabHTag",
+              "fill": "#4F9CF710",
+              "cornerRadius": 20,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4F9CF730"
+              },
+              "gap": 6,
+              "padding": [
+                6,
+                14
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "AEbsX",
+                  "name": "tabHTagDot",
+                  "fill": "#4F9CF7",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "text",
+                  "id": "clSDe",
+                  "name": "tabHTagTxt",
+                  "fill": "#4F9CF7",
+                  "content": "Building Canada's Space Future",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "lzQaj",
+              "name": "tabHHead",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Black Canadians in\nSpace & Defence",
+              "lineHeight": 1.08,
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 44,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "text",
+              "id": "2IBeY",
+              "name": "tabHSub",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A community for Black Canadian engineers, scientists, and technologists building Canada's space and defence systems.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 18
+            },
+            {
+              "type": "frame",
+              "id": "MU4Sh",
+              "name": "tabHBtns",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "8k2B0",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "name": "tabHBtn1",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join the Community"
+                    }
+                  }
+                },
+                {
+                  "id": "dPoCw",
+                  "type": "ref",
+                  "ref": "LTVeU",
+                  "name": "tabHBtn2",
+                  "descendants": {
+                    "C1gSl": {
+                      "content": "Learn More"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "g93k0",
+          "name": "TabProblem",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Grl7z",
+              "name": "tabPL",
+              "fill": "#4F9CF7",
+              "content": "WHY THIS EXISTS",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "UGMxg",
+              "name": "tabPH",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Canada's space sector is growing.\nBlack Canadians are missing from it.",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 32,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "B0I4L",
+              "name": "tabPC",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CVgOt",
+                  "name": "tabPP1",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Canada's space sector supports over 12,000 jobs and is growing fast. Canadarm3, Lunar Gateway, defence modernization, satellite programs — billions in investment are reshaping the industry.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "id": "RJ4Cj",
+                  "name": "tabPP2",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Yet Black Canadians remain underrepresented in these programs — especially on the engineering and technology side.",
+                  "lineHeight": 1.7,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 16
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "zIMPX",
+              "name": "tabPS",
+              "fill": "#4F9CF708",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4F9CF720"
+              },
+              "layout": "vertical",
+              "gap": 8,
+              "padding": [
+                24,
+                40
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "X9bI5",
+                  "name": "tabPSN",
+                  "fill": "#4F9CF7",
+                  "content": "0",
+                  "fontFamily": "Sora",
+                  "fontSize": 52,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "iLjjD",
+                  "name": "tabPSL",
+                  "fill": "#8A8A9A",
+                  "content": "Black Canadian astronauts to date",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "vSree",
+              "name": "tabPP3",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Many of us have been \"the only one in the room.\"\nThis community changes that.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 17,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1SPe3",
+          "name": "TabWhoItsFor",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            32
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "L3EmP",
+              "name": "tabWL",
+              "fill": "#4F9CF7",
+              "content": "WHO IT'S FOR",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "DrrCA",
+              "name": "tabWH",
+              "fill": "#FFFFFF",
+              "content": "Is this community for you?",
+              "fontFamily": "Sora",
+              "fontSize": 32,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "EFzmb",
+              "name": "tabWG1",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "dVOAO",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "tabWC1",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "code"
+                    },
+                    "GOL1D": {
+                      "content": "Software & Systems Engineers"
+                    },
+                    "yKhrG": {
+                      "content": "Writing flight software, ground systems, C2 platforms, simulations"
+                    }
+                  }
+                },
+                {
+                  "id": "N9XOs",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "tabWC2",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "wrench"
+                    },
+                    "GOL1D": {
+                      "content": "Hardware & Mechanical Engineers"
+                    },
+                    "yKhrG": {
+                      "content": "Designing, testing, and building space and defence hardware"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wLDxq",
+              "name": "tabWG2",
+              "width": "fill_container",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "OL0qE",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "tabWC3",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "graduation-cap"
+                    },
+                    "GOL1D": {
+                      "content": "Students & Early-Career"
+                    },
+                    "yKhrG": {
+                      "content": "Studying engineering, CS, physics, or related fields"
+                    }
+                  }
+                },
+                {
+                  "id": "FNDiL",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "tabWC4",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "briefcase"
+                    },
+                    "GOL1D": {
+                      "content": "Entrepreneurs & Contractors"
+                    },
+                    "yKhrG": {
+                      "content": "Pursuing contracts in the Canadian defence and space supply chain"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PqppQ",
+              "name": "tabWG3",
+              "width": "fill_container",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "S9vbF",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": 340,
+                  "name": "tabWC5",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "flask-conical"
+                    },
+                    "GOL1D": {
+                      "content": "Scientists & Researchers"
+                    },
+                    "yKhrG": {
+                      "content": "Working on space-related projects at Canadian institutions or agencies"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EFAoo",
+          "name": "TabWhatWeDo",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            32
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "vRnoU",
+              "name": "tabWtL",
+              "fill": "#4F9CF7",
+              "content": "WHAT WE DO",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "7pgyG",
+              "name": "tabWtH",
+              "fill": "#FFFFFF",
+              "content": "More than a logo and a mission statement.",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 32,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "T29FN",
+              "name": "tabWtGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "id": "rWFtO",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "tabWtP1",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "users"
+                    },
+                    "NQWlj": {
+                      "content": "Connect"
+                    },
+                    "zMyh7": {
+                      "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work."
+                    }
+                  }
+                },
+                {
+                  "id": "jVyar",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "tabWtP2",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "megaphone"
+                    },
+                    "NQWlj": {
+                      "content": "Share"
+                    },
+                    "zMyh7": {
+                      "content": "Weekly posts covering CSA contract announcements, DND procurement opportunities, job openings, policy updates, scholarships, and internships."
+                    }
+                  }
+                },
+                {
+                  "id": "6VgQD",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "tabWtP3",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "star"
+                    },
+                    "NQWlj": {
+                      "content": "Elevate"
+                    },
+                    "zMyh7": {
+                      "content": "Spotlights on Black Canadians already in the sector. Making visible the people and careers that the industry rarely highlights."
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zoG5q",
+          "name": "TabSignup",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "layout": "vertical",
+          "gap": 36,
+          "padding": [
+            80,
+            48
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "T3D8K",
+              "name": "tabSL",
+              "fill": "#4F9CF7",
+              "content": "JOIN US",
+              "fontFamily": "Inter",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "JRfxs",
+              "name": "tabSH",
+              "fill": "#FFFFFF",
+              "content": "Join Black Space Canada",
+              "fontFamily": "Sora",
+              "fontSize": 32,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "frame",
+              "id": "ho2Sm",
+              "name": "tabSCard",
+              "width": "fill_container",
+              "fill": "#0D0E18",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1A1A2E"
+              },
+              "layout": "vertical",
+              "gap": 18,
+              "padding": 32,
+              "children": [
+                {
+                  "id": "j1fK2",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "tabSI1",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Full Name *"
+                    },
+                    "hvZ2S": {
+                      "content": "Enter your full name"
+                    }
+                  }
+                },
+                {
+                  "id": "1JHcB",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "tabSI2",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Email *"
+                    },
+                    "hvZ2S": {
+                      "content": "you@example.com"
+                    }
+                  }
+                },
+                {
+                  "id": "yGhWK",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "tabSI3",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Current Role / Title"
+                    },
+                    "hvZ2S": {
+                      "content": "e.g. Software Engineer"
+                    }
+                  }
+                },
+                {
+                  "id": "0py3C",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "tabSI4",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Organization"
+                    },
+                    "hvZ2S": {
+                      "content": "e.g. MDA Space"
+                    }
+                  }
+                },
+                {
+                  "id": "tEz6X",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "tabSI5",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "How did you hear about us?"
+                    },
+                    "hvZ2S": {
+                      "content": "Select one..."
+                    }
+                  }
+                },
+                {
+                  "id": "hPuam",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "width": "fill_container",
+                  "name": "tabSBtn",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join Black Space Canada"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "MW9tZ",
+                  "name": "tabSRe",
+                  "fill": "#52526A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "We'll send you a welcome email with a link to our LinkedIn group and details on the next virtual meetup. No spam, ever.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dTiQW",
+          "name": "TabFounder",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "gap": 32,
+          "padding": [
+            64,
+            48
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "GYpyC",
+              "name": "tabFPhoto",
+              "metadata": {
+                "type": "unsplash",
+                "username": "jaysoundo",
+                "link": "https://unsplash.com/@jaysoundo",
+                "author": "Jay Soundo"
+              },
+              "width": 80,
+              "height": 80,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1759261717706-520729c7f40e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMzOTkxNjN8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 40,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#4F9CF730"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "YHqAq",
+              "name": "tabFInfo",
+              "width": 420,
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Gd6lX",
+                  "name": "tabFN",
+                  "fill": "#FFFFFF",
+                  "content": "Quinn Brown",
+                  "fontFamily": "Sora",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "FV38k",
+                  "name": "tabFT",
+                  "fill": "#4F9CF7",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Senior .NET Consultant & Software Quality Lead, MDA Space",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "RJkwJ",
+                  "name": "tabFB",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Currently building software for Canadarm3 on NASA's Lunar Gateway program. Started Black Space Canada because this community should have existed years ago.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 14
+                },
+                {
+                  "type": "frame",
+                  "id": "hYB7M",
+                  "name": "tabFL",
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "4AXV0",
+                      "name": "tabFLI",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "linkedin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4F9CF7"
+                    },
+                    {
+                      "type": "text",
+                      "id": "iNXw7",
+                      "name": "tabFLT",
+                      "fill": "#4F9CF7",
+                      "content": "Connect on LinkedIn",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "zTXXV",
+          "name": "TabFooter",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#FFFFFF08"
+          },
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            32
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "DFlbD",
+              "name": "tabFtTop",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "eyepq",
+                  "name": "tabFtLogo",
+                  "fill": "#FFFFFF",
+                  "content": "BLACK SPACE CANADA",
+                  "fontFamily": "Sora",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "frame",
+                  "id": "5pzfT",
+                  "name": "tabFtLinks",
+                  "gap": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QqYCb",
+                      "name": "tabFtEm",
+                      "fill": "#8A8A9A",
+                      "content": "hello@blackspace.ca",
+                      "fontFamily": "Inter",
+                      "fontSize": 12
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1DMot",
+                      "name": "tabFtLiWrap",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "zuzbN",
+                          "name": "tabFtLiIc",
+                          "width": 12,
+                          "height": 12,
+                          "iconFontName": "linkedin",
+                          "iconFontFamily": "lucide",
+                          "fill": "#8A8A9A"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2eajn",
+                          "name": "tabFtLiTx",
+                          "fill": "#8A8A9A",
+                          "content": "LinkedIn",
+                          "fontFamily": "Inter",
+                          "fontSize": 12
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "ku5sg",
+              "name": "tabFtDisc",
+              "fill": "#52526A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 11
+            },
+            {
+              "type": "text",
+              "id": "K0w3E",
+              "name": "tabFtCopy",
+              "fill": "#3A3A4A",
+              "content": "© 2026 Black Space Canada. All rights reserved.",
+              "fontFamily": "Inter",
+              "fontSize": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rTj3y",
+      "x": 2550,
+      "y": 0,
+      "name": "Mobile - 375px",
+      "width": 375,
+      "fill": "#07080F",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BBLoT",
+          "name": "MobNav",
+          "width": "fill_container",
+          "fill": "#07080FE0",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#FFFFFF08"
+          },
+          "padding": [
+            12,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DOJPj",
+              "name": "mobNavLogo",
+              "fill": "#FFFFFF",
+              "content": "BLACK SPACE",
+              "fontFamily": "Sora",
+              "fontSize": 13,
+              "fontWeight": "700",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "icon_font",
+              "id": "dM0xV",
+              "name": "mobNavHamburger",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "menu",
+              "iconFontFamily": "lucide",
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LZv6t",
+          "name": "MobHero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1.4,
+              "height": 1.4
+            },
+            "colors": [
+              {
+                "color": "#0D1B3E",
+                "position": 0
+              },
+              {
+                "color": "#07080F",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0.4
+            }
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            64,
+            24
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Q6oQB",
+              "name": "mobHTag",
+              "fill": "#4F9CF710",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4F9CF730"
+              },
+              "gap": 6,
+              "padding": [
+                6,
+                12
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "00WJu",
+                  "name": "mobHTDot",
+                  "fill": "#4F9CF7",
+                  "width": 6,
+                  "height": 6
+                },
+                {
+                  "type": "text",
+                  "id": "GcgqU",
+                  "name": "mobHTTxt",
+                  "fill": "#4F9CF7",
+                  "content": "Building Canada's Space Future",
+                  "fontFamily": "Inter",
+                  "fontSize": 10,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "9wVag",
+              "name": "mobHHead",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Black Canadians in Space & Defence",
+              "lineHeight": 1.1,
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 32,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "text",
+              "id": "NHNnt",
+              "name": "mobHSub",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "A community for Black Canadian engineers, scientists, and technologists building Canada's space and defence systems.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16
+            },
+            {
+              "type": "frame",
+              "id": "ukOV5",
+              "name": "mobHBtns",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "cZ0cq",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "width": "fill_container",
+                  "name": "mobHB1",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join the Community"
+                    }
+                  }
+                },
+                {
+                  "id": "UWnla",
+                  "type": "ref",
+                  "ref": "LTVeU",
+                  "width": "fill_container",
+                  "name": "mobHB2",
+                  "descendants": {
+                    "C1gSl": {
+                      "content": "Learn More"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DfVjf",
+          "name": "MobProblem",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            64,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "bpxCm",
+              "name": "mobPL",
+              "fill": "#4F9CF7",
+              "content": "WHY THIS EXISTS",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "letterSpacing": 2.5
+            },
+            {
+              "type": "text",
+              "id": "aYR93",
+              "name": "mobPH",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Canada's space sector is growing. Black Canadians are missing from it.",
+              "lineHeight": 1.2,
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "SO8Ig",
+              "name": "mobPP1",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Canada's space sector supports over 12,000 jobs and is growing fast. Canadarm3, Lunar Gateway, defence modernization — billions in investment are reshaping the industry.",
+              "lineHeight": 1.7,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "Sge79",
+              "name": "mobPS",
+              "fill": "#4F9CF708",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#4F9CF720"
+              },
+              "layout": "vertical",
+              "gap": 6,
+              "padding": [
+                24,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YIEE2",
+                  "name": "mobPSN",
+                  "fill": "#4F9CF7",
+                  "content": "0",
+                  "fontFamily": "Sora",
+                  "fontSize": 48,
+                  "fontWeight": "700",
+                  "letterSpacing": -2
+                },
+                {
+                  "type": "text",
+                  "id": "FDHuh",
+                  "name": "mobPSLb",
+                  "fill": "#8A8A9A",
+                  "content": "Black Canadian astronauts to date",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "NfEta",
+              "name": "mobPP2",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Many of us have been \"the only one in the room.\" This community changes that.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ErxBG",
+          "name": "MobWhoItsFor",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            64,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JzaZK",
+              "name": "mobWL",
+              "fill": "#4F9CF7",
+              "content": "WHO IT'S FOR",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "letterSpacing": 2.5
+            },
+            {
+              "type": "text",
+              "id": "4xLdf",
+              "name": "mobWH",
+              "fill": "#FFFFFF",
+              "content": "Is this community for you?",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "frame",
+              "id": "2iqag",
+              "name": "mobWGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "rtFal",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "mobWC1",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "code"
+                    },
+                    "GOL1D": {
+                      "content": "Software & Systems Engineers"
+                    },
+                    "yKhrG": {
+                      "content": "Writing flight software, ground systems, C2 platforms, simulations"
+                    }
+                  }
+                },
+                {
+                  "id": "dzxUi",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "mobWC2",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "wrench"
+                    },
+                    "GOL1D": {
+                      "content": "Hardware & Mechanical Engineers"
+                    },
+                    "yKhrG": {
+                      "content": "Designing, testing, and building space and defence hardware"
+                    }
+                  }
+                },
+                {
+                  "id": "gTuyb",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "mobWC3",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "graduation-cap"
+                    },
+                    "GOL1D": {
+                      "content": "Students & Early-Career"
+                    },
+                    "yKhrG": {
+                      "content": "Studying engineering, CS, physics, or related fields"
+                    }
+                  }
+                },
+                {
+                  "id": "KZ2ct",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "mobWC4",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "briefcase"
+                    },
+                    "GOL1D": {
+                      "content": "Entrepreneurs & Contractors"
+                    },
+                    "yKhrG": {
+                      "content": "Pursuing contracts in the Canadian defence and space supply chain"
+                    }
+                  }
+                },
+                {
+                  "id": "Chspg",
+                  "type": "ref",
+                  "ref": "7Nbbe",
+                  "width": "fill_container",
+                  "name": "mobWC5",
+                  "descendants": {
+                    "4IEyf": {
+                      "iconFontName": "flask-conical"
+                    },
+                    "GOL1D": {
+                      "content": "Scientists & Researchers"
+                    },
+                    "yKhrG": {
+                      "content": "Working on space-related projects at Canadian institutions"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "017tI",
+          "name": "MobWhatWeDo",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            64,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Cloev",
+              "name": "mobWtL",
+              "fill": "#4F9CF7",
+              "content": "WHAT WE DO",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "letterSpacing": 2.5
+            },
+            {
+              "type": "text",
+              "id": "WBBMR",
+              "name": "mobWtH",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "More than a logo and a mission statement.",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "frame",
+              "id": "3Thdq",
+              "name": "mobWtG",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "8gpSa",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "mobWtP1",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "users"
+                    },
+                    "NQWlj": {
+                      "content": "Connect"
+                    },
+                    "zMyh7": {
+                      "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work."
+                    }
+                  }
+                },
+                {
+                  "id": "4yT0X",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "mobWtP2",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "megaphone"
+                    },
+                    "NQWlj": {
+                      "content": "Share"
+                    },
+                    "zMyh7": {
+                      "content": "Weekly posts covering CSA contracts, DND procurement, job openings, scholarships, and internships."
+                    }
+                  }
+                },
+                {
+                  "id": "YhWyy",
+                  "type": "ref",
+                  "ref": "Y0Vaz",
+                  "width": "fill_container",
+                  "name": "mobWtP3",
+                  "descendants": {
+                    "pXZjX": {
+                      "iconFontName": "star"
+                    },
+                    "NQWlj": {
+                      "content": "Elevate"
+                    },
+                    "zMyh7": {
+                      "content": "Spotlights on Black Canadians already in the sector. Making visible the people the industry rarely highlights."
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "D6xaJ",
+          "name": "MobSignup",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            64,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "QzExP",
+              "name": "mobSL",
+              "fill": "#4F9CF7",
+              "content": "JOIN US",
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fontWeight": "700",
+              "letterSpacing": 2.5
+            },
+            {
+              "type": "text",
+              "id": "6CIwJ",
+              "name": "mobSH",
+              "fill": "#FFFFFF",
+              "content": "Join Black Space Canada",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "frame",
+              "id": "7JJtM",
+              "name": "mobSCard",
+              "width": "fill_container",
+              "fill": "#0D0E18",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1A1A2E"
+              },
+              "layout": "vertical",
+              "gap": 16,
+              "padding": 24,
+              "children": [
+                {
+                  "id": "cmsY0",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "mobSI1",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Full Name *"
+                    },
+                    "hvZ2S": {
+                      "content": "Enter your full name"
+                    }
+                  }
+                },
+                {
+                  "id": "WlysE",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "mobSI2",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Email *"
+                    },
+                    "hvZ2S": {
+                      "content": "you@example.com"
+                    }
+                  }
+                },
+                {
+                  "id": "fXlyt",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "mobSI3",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Current Role / Title"
+                    },
+                    "hvZ2S": {
+                      "content": "e.g. Software Engineer"
+                    }
+                  }
+                },
+                {
+                  "id": "tsOdM",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "mobSI4",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "Organization"
+                    },
+                    "hvZ2S": {
+                      "content": "e.g. MDA Space"
+                    }
+                  }
+                },
+                {
+                  "id": "VVoCc",
+                  "type": "ref",
+                  "ref": "pjEnX",
+                  "width": "fill_container",
+                  "name": "mobSI5",
+                  "descendants": {
+                    "igtD0": {
+                      "content": "How did you hear about us?"
+                    },
+                    "hvZ2S": {
+                      "content": "Select one..."
+                    }
+                  }
+                },
+                {
+                  "id": "3rkDz",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "width": "fill_container",
+                  "name": "mobSBtn",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join Black Space Canada"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "Lb8a3",
+                  "name": "mobSRe",
+                  "fill": "#52526A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "We'll send you a welcome email with a link to our LinkedIn group and details on the next meetup. No spam, ever.",
+                  "lineHeight": 1.6,
+                  "textAlign": "center",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "njRS1",
+          "name": "MobFounder",
+          "width": "fill_container",
+          "fill": "#0A0B14",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            48,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "p6sRw",
+              "name": "mobFPhoto",
+              "metadata": {
+                "type": "unsplash",
+                "username": "dhandavishal",
+                "link": "https://unsplash.com/@dhandavishal",
+                "author": "Vishal Dhanda"
+              },
+              "width": 72,
+              "height": 72,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1772209225935-eb4f1d4f7046?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzMzOTkyNzh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 36,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#4F9CF730"
+              }
+            },
+            {
+              "type": "text",
+              "id": "RZJiU",
+              "name": "mobFN",
+              "fill": "#FFFFFF",
+              "content": "Quinn Brown",
+              "fontFamily": "Sora",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "S2nMJ",
+              "name": "mobFT",
+              "fill": "#4F9CF7",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Senior .NET Consultant & Software Quality Lead, MDA Space",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "KiDJa",
+              "name": "mobFB",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Currently building software for Canadarm3 on NASA's Lunar Gateway program. Started Black Space Canada because this community should have existed years ago.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "dRMgb",
+              "name": "mobFL",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "GNVBu",
+                  "name": "mobFLI",
+                  "width": 14,
+                  "height": 14,
+                  "iconFontName": "linkedin",
+                  "iconFontFamily": "lucide",
+                  "fill": "#4F9CF7"
+                },
+                {
+                  "type": "text",
+                  "id": "u4Rro",
+                  "name": "mobFLT",
+                  "fill": "#4F9CF7",
+                  "content": "Connect on LinkedIn",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "RjseP",
+          "name": "MobFooter",
+          "width": "fill_container",
+          "fill": "#07080F",
+          "stroke": {
+            "thickness": {
+              "top": 1
+            },
+            "fill": "#FFFFFF08"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            32,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "4nCKZ",
+              "name": "mobFtLogo",
+              "fill": "#FFFFFF",
+              "content": "BLACK SPACE CANADA",
+              "fontFamily": "Sora",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "MfUgS",
+              "name": "mobFtLinks",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4hCkS",
+                  "name": "mobFtEm",
+                  "fill": "#8A8A9A",
+                  "content": "hello@blackspace.ca",
+                  "fontFamily": "Inter",
+                  "fontSize": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "FSzOV",
+                  "name": "mobFtLiW",
+                  "gap": 4,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "OUfmq",
+                      "name": "mobFtLiI",
+                      "width": 12,
+                      "height": 12,
+                      "iconFontName": "linkedin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#8A8A9A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "GfOXc",
+                      "name": "mobFtLiT",
+                      "fill": "#8A8A9A",
+                      "content": "LinkedIn",
+                      "fontFamily": "Inter",
+                      "fontSize": 12
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "Fbjxe",
+              "name": "mobFtDisc",
+              "fill": "#52526A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 10
+            },
+            {
+              "type": "text",
+              "id": "1ISE7",
+              "name": "mobFtCopy",
+              "fill": "#3A3A4A",
+              "content": "© 2026 Black Space Canada",
+              "fontFamily": "Inter",
+              "fontSize": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "xjr5A",
+      "x": 0,
+      "y": 5200,
+      "name": "Notifications & Dialogs",
+      "width": 1800,
+      "height": 1200,
+      "fill": "#1A1A2E",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "dljcQ",
+          "x": 40,
+          "y": 40,
+          "name": "Form Validation Errors",
+          "width": 520,
+          "fill": "#0D0E18",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#1A1A2E"
+          },
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "KoEqN",
+              "name": "valBanner",
+              "width": "fill_container",
+              "fill": "#FF3B3015",
+              "cornerRadius": 8,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#FF3B3040"
+              },
+              "gap": 10,
+              "padding": [
+                12,
+                16
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "xvPIu",
+                  "name": "valBannerIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "circle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF3B30"
+                },
+                {
+                  "type": "text",
+                  "id": "d1hW9",
+                  "name": "valBannerText",
+                  "fill": "#FF3B30",
+                  "content": "Please fix 2 errors before submitting",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "glpFU",
+              "name": "valInp1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sjyVh",
+                  "name": "valLb1",
+                  "fill": "#FF3B30",
+                  "content": "Full Name *",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "frame",
+                  "id": "2f81P",
+                  "name": "valFld1",
+                  "width": "fill_container",
+                  "fill": "#0F1019",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FF3B30"
+                  },
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lYX9K",
+                      "name": "valPh1",
+                      "fill": "#52526A",
+                      "content": "Enter your full name",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "Y2JTp",
+                  "name": "valErr1",
+                  "fill": "#FF3B30",
+                  "content": "Please enter your name",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fztgd",
+              "name": "valInp2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 6,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "cM7BC",
+                  "name": "valLb2",
+                  "fill": "#FF3B30",
+                  "content": "Email *",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "500",
+                  "letterSpacing": 0.5
+                },
+                {
+                  "type": "frame",
+                  "id": "tTvCy",
+                  "name": "valFld2",
+                  "width": "fill_container",
+                  "fill": "#0F1019",
+                  "cornerRadius": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#FF3B30"
+                  },
+                  "padding": [
+                    14,
+                    16
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yaOqr",
+                      "name": "valPh2",
+                      "fill": "#FFFFFF",
+                      "content": "not-an-email",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "mEzwt",
+                  "name": "valErr2",
+                  "fill": "#FF3B30",
+                  "content": "Please enter a valid email address",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "id": "YvJcS",
+              "type": "ref",
+              "ref": "pjEnX",
+              "width": "fill_container",
+              "name": "valInp3",
+              "descendants": {
+                "igtD0": {
+                  "content": "Current Role / Title"
+                },
+                "hvZ2S": {
+                  "content": "e.g. Software Engineer"
+                }
+              }
+            },
+            {
+              "id": "H98MD",
+              "type": "ref",
+              "ref": "W15tV",
+              "width": "fill_container",
+              "opacity": 0.5,
+              "name": "valSubmit",
+              "descendants": {
+                "teqyc": {
+                  "content": "Join Black Space Canada"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JjmHc",
+          "x": 640,
+          "y": 40,
+          "name": "Success Toast",
+          "width": 420,
+          "fill": "#0D2818",
+          "cornerRadius": 12,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#32D74B30"
+          },
+          "gap": 12,
+          "padding": [
+            16,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "dIhLw",
+              "name": "toastIcon",
+              "width": 32,
+              "height": 32,
+              "fill": "#32D74B20",
+              "cornerRadius": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "0A0hY",
+                  "name": "toastIconInner",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "check",
+                  "iconFontFamily": "lucide",
+                  "fill": "#32D74B"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ldtuZ",
+              "name": "toastContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YQVNA",
+                  "name": "toastTitle",
+                  "fill": "#FFFFFF",
+                  "content": "You're in! Welcome to the community.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "Ot5hH",
+                  "name": "toastDesc",
+                  "fill": "#8A8A9A",
+                  "content": "Check your email for next steps.",
+                  "fontFamily": "Inter",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "ufLol",
+              "name": "toastClose",
+              "width": 18,
+              "height": 18,
+              "iconFontName": "x",
+              "iconFontFamily": "lucide",
+              "fill": "#52526A"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LnyKu",
+          "x": 640,
+          "y": 140,
+          "name": "Already Registered Alert",
+          "width": 480,
+          "fill": "#2A1E08",
+          "cornerRadius": 12,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#FF990030"
+          },
+          "gap": 12,
+          "padding": [
+            16,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "XJNFR",
+              "name": "arIcon",
+              "width": 32,
+              "height": 32,
+              "fill": "#FF990020",
+              "cornerRadius": 16,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "TlJ80",
+                  "name": "arIconInner",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "triangle-alert",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FF9900"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eTXA3",
+              "name": "arContent",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Apc1e",
+                  "name": "arTitle",
+                  "fill": "#FFFFFF",
+                  "content": "This email is already part of the community.",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "fwVmg",
+                  "name": "arDesc",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Check your inbox for your welcome email or contact hello@blackspace.ca.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "Inter",
+                  "fontSize": 13
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "J1QHw",
+              "name": "arClose",
+              "width": 18,
+              "height": 18,
+              "iconFontName": "x",
+              "iconFontFamily": "lucide",
+              "fill": "#52526A"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kjwsJ",
+          "x": 40,
+          "y": 500,
+          "name": "Cookie Banner",
+          "width": 700,
+          "fill": "#0D0E18",
+          "cornerRadius": 12,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#1A1A2E"
+          },
+          "gap": 16,
+          "padding": [
+            16,
+            24
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Hwjz2",
+              "name": "cookieText",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "We use analytics to improve your experience. No personal data is sold.",
+              "fontFamily": "Inter",
+              "fontSize": 14
+            },
+            {
+              "type": "frame",
+              "id": "iPHVP",
+              "name": "cookieBtns",
+              "gap": 10,
+              "children": [
+                {
+                  "id": "WUWkD",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "padding": [
+                    10,
+                    20
+                  ],
+                  "cornerRadius": 6,
+                  "name": "cookieAccept",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Accept",
+                      "fontSize": 13
+                    }
+                  }
+                },
+                {
+                  "id": "JDlcw",
+                  "type": "ref",
+                  "ref": "LTVeU",
+                  "padding": [
+                    10,
+                    20
+                  ],
+                  "cornerRadius": 6,
+                  "name": "cookieLearn",
+                  "descendants": {
+                    "C1gSl": {
+                      "content": "Learn More",
+                      "fontSize": 13
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oDtUp",
+          "x": 40,
+          "y": 620,
+          "name": "Confirmation Dialog",
+          "width": 500,
+          "height": 300,
+          "fill": "#00000080",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "sIDJs",
+              "x": 50,
+              "y": 40,
+              "name": "confirmModal",
+              "width": 400,
+              "fill": "#0D0E18",
+              "cornerRadius": 16,
+              "stroke": {
+                "thickness": 1,
+                "fill": "#1A1A2E"
+              },
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "CLBZP",
+                  "name": "confirmTitle",
+                  "fill": "#FFFFFF",
+                  "content": "Confirm Unsubscribe",
+                  "fontFamily": "Sora",
+                  "fontSize": 20,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "oPisa",
+                  "name": "confirmBody",
+                  "fill": "#8A8A9A",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Are you sure you want to unsubscribe from Black Space Canada? You'll stop receiving community updates and event invitations.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 15
+                },
+                {
+                  "type": "frame",
+                  "id": "PYjhe",
+                  "name": "confirmBtns",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "justifyContent": "end",
+                  "children": [
+                    {
+                      "id": "TASro",
+                      "type": "ref",
+                      "ref": "LTVeU",
+                      "padding": [
+                        10,
+                        24
+                      ],
+                      "cornerRadius": 8,
+                      "name": "confirmCancel",
+                      "descendants": {
+                        "C1gSl": {
+                          "content": "Cancel",
+                          "fontSize": 14
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "FD1Qy",
+                      "name": "confirmOk",
+                      "fill": "#FF3B30",
+                      "cornerRadius": 8,
+                      "padding": [
+                        10,
+                        24
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OZ954",
+                          "name": "confirmOkText",
+                          "fill": "#FFFFFF",
+                          "content": "Unsubscribe",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "gSsBE",
+          "x": 640,
+          "y": 280,
+          "name": "Form Success State",
+          "width": 520,
+          "fill": "#0D0E18",
+          "cornerRadius": 16,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#1A1A2E"
+          },
+          "layout": "vertical",
+          "gap": 20,
+          "padding": 48,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "yT76F",
+              "name": "successIcon",
+              "width": 64,
+              "height": 64,
+              "fill": "#32D74B15",
+              "cornerRadius": 32,
+              "stroke": {
+                "thickness": 2,
+                "fill": "#32D74B30"
+              },
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "3itmr",
+                  "name": "successIconInner",
+                  "width": 32,
+                  "height": 32,
+                  "iconFontName": "check",
+                  "iconFontFamily": "lucide",
+                  "fill": "#32D74B"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "XZ7oG",
+              "name": "successTitle",
+              "fill": "#FFFFFF",
+              "content": "You're in. Welcome to the community.",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 24,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "1Pzlr",
+              "name": "successDesc",
+              "fill": "#8A8A9A",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Check your email for a welcome message with a link to our LinkedIn group and details on the next virtual meetup.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 15
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "tiNzn",
+              "name": "successLine",
+              "fill": "#4F9CF7",
+              "width": 40,
+              "height": 3
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pdm3f",
+          "x": 1250,
+          "y": 40,
+          "name": "Mobile Menu Overlay",
+          "width": 375,
+          "height": 812,
+          "fill": "#07080FF5",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "2POMB",
+              "name": "mobMenuTop",
+              "width": "fill_container",
+              "stroke": {
+                "thickness": {
+                  "bottom": 1
+                },
+                "fill": "#FFFFFF08"
+              },
+              "padding": [
+                12,
+                20
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sAmcF",
+                  "name": "mobMenuLogo",
+                  "fill": "#FFFFFF",
+                  "content": "BLACK SPACE",
+                  "fontFamily": "Sora",
+                  "fontSize": 13,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "icon_font",
+                  "id": "rpcCs",
+                  "name": "mobMenuClose",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "x",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HdaUU",
+              "name": "mobMenuLinks",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                24,
+                0
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Yf1fI",
+                  "name": "mobML1",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#FFFFFF08"
+                  },
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "487AR",
+                      "name": "mobML1T",
+                      "fill": "#FFFFFF",
+                      "content": "About",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "oIyIZ",
+                  "name": "mobML2",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#FFFFFF08"
+                  },
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WfRd9",
+                      "name": "mobML2T",
+                      "fill": "#FFFFFF",
+                      "content": "Who It's For",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "STZoz",
+                  "name": "mobML3",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#FFFFFF08"
+                  },
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NdzRJ",
+                      "name": "mobML3T",
+                      "fill": "#FFFFFF",
+                      "content": "What We Do",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Lv9Kq",
+                  "name": "mobML4",
+                  "width": "fill_container",
+                  "stroke": {
+                    "thickness": {
+                      "bottom": 1
+                    },
+                    "fill": "#FFFFFF08"
+                  },
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "alHg7",
+                      "name": "mobML4T",
+                      "fill": "#FFFFFF",
+                      "content": "Founder",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YxDby",
+              "name": "mobMenuCta",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                32,
+                24
+              ],
+              "children": [
+                {
+                  "id": "ba09N",
+                  "type": "ref",
+                  "ref": "W15tV",
+                  "width": "fill_container",
+                  "name": "mobMenuBtn",
+                  "descendants": {
+                    "teqyc": {
+                      "content": "Join the Community"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "qhZqs",
+          "x": 40,
+          "y": 20,
+          "name": "lbl1",
+          "fill": "#4F9CF7",
+          "content": "Form Validation Errors",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        },
+        {
+          "type": "text",
+          "id": "LncOX",
+          "x": 640,
+          "y": 20,
+          "name": "lbl2",
+          "fill": "#4F9CF7",
+          "content": "Success Toast",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        },
+        {
+          "type": "text",
+          "id": "ziUp8",
+          "x": 640,
+          "y": 120,
+          "name": "lbl3",
+          "fill": "#4F9CF7",
+          "content": "Already Registered Alert",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        },
+        {
+          "type": "text",
+          "id": "5mQtR",
+          "x": 640,
+          "y": 260,
+          "name": "lbl4",
+          "fill": "#4F9CF7",
+          "content": "Form Success State",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        },
+        {
+          "type": "text",
+          "id": "d7SHU",
+          "x": 40,
+          "y": 480,
+          "name": "lbl5",
+          "fill": "#4F9CF7",
+          "content": "Cookie / Privacy Banner",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        },
+        {
+          "type": "text",
+          "id": "TAork",
+          "x": 40,
+          "y": 600,
+          "name": "lbl6",
+          "fill": "#4F9CF7",
+          "content": "Confirmation Dialog",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        },
+        {
+          "type": "text",
+          "id": "l2BCB",
+          "x": 1250,
+          "y": 20,
+          "name": "lbl7",
+          "fill": "#4F9CF7",
+          "content": "Mobile Menu Overlay",
+          "fontFamily": "Inter",
+          "fontSize": 11,
+          "fontWeight": "700",
+          "letterSpacing": 2
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "W15tV",
+      "x": -600,
+      "y": 0,
+      "name": "Component/ButtonPrimary",
+      "reusable": true,
+      "fill": "#4F9CF7",
+      "cornerRadius": 8,
+      "gap": 8,
+      "padding": [
+        16,
+        32
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "teqyc",
+          "name": "btnPrimaryText",
+          "fill": "#FFFFFF",
+          "content": "Join the Community",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "600"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "LTVeU",
+      "x": -600,
+      "y": 80,
+      "name": "Component/ButtonSecondary",
+      "reusable": true,
+      "fill": "#FFFFFF10",
+      "cornerRadius": 8,
+      "stroke": {
+        "thickness": 1,
+        "fill": "#FFFFFF30"
+      },
+      "gap": 8,
+      "padding": [
+        16,
+        32
+      ],
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "text",
+          "id": "C1gSl",
+          "name": "btnSecondaryText",
+          "fill": "#FFFFFF",
+          "content": "Learn More",
+          "fontFamily": "Inter",
+          "fontSize": 16,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "pjEnX",
+      "x": -600,
+      "y": 180,
+      "name": "Component/FormInput",
+      "reusable": true,
+      "width": 400,
+      "layout": "vertical",
+      "gap": 6,
+      "children": [
+        {
+          "type": "text",
+          "id": "igtD0",
+          "name": "formLabel",
+          "fill": "#8A8A9A",
+          "content": "Full Name",
+          "fontFamily": "Inter",
+          "fontSize": 13,
+          "fontWeight": "500",
+          "letterSpacing": 0.5
+        },
+        {
+          "type": "frame",
+          "id": "KshwC",
+          "name": "formField",
+          "width": "fill_container",
+          "fill": "#0F1019",
+          "cornerRadius": 8,
+          "stroke": {
+            "thickness": 1,
+            "fill": "#2A2A3A"
+          },
+          "padding": [
+            14,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "hvZ2S",
+              "name": "formPlaceholder",
+              "fill": "#52526A",
+              "content": "Enter your full name",
+              "fontFamily": "Inter",
+              "fontSize": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "7Nbbe",
+      "x": -600,
+      "y": 360,
+      "name": "Component/AudienceCard",
+      "reusable": true,
+      "width": 280,
+      "fill": "#0F1019",
+      "cornerRadius": 12,
+      "stroke": {
+        "thickness": 1,
+        "fill": "#1A1A2E"
+      },
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 24,
+      "children": [
+        {
+          "type": "icon_font",
+          "id": "4IEyf",
+          "name": "audIcon",
+          "width": 28,
+          "height": 28,
+          "iconFontName": "code",
+          "iconFontFamily": "lucide",
+          "fill": "#4F9CF7"
+        },
+        {
+          "type": "text",
+          "id": "GOL1D",
+          "name": "audTitle",
+          "fill": "#FFFFFF",
+          "content": "Software Engineers",
+          "fontFamily": "Sora",
+          "fontSize": 17,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "yKhrG",
+          "name": "audDesc",
+          "fill": "#8A8A9A",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Writing flight software, ground systems, C2 platforms, simulations",
+          "lineHeight": 1.5,
+          "fontFamily": "Inter",
+          "fontSize": 14
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Y0Vaz",
+      "x": -600,
+      "y": 600,
+      "name": "Component/PillarCard",
+      "reusable": true,
+      "width": 380,
+      "fill": "#0F1019",
+      "cornerRadius": 12,
+      "stroke": {
+        "thickness": 1,
+        "fill": "#1A1A2E"
+      },
+      "layout": "vertical",
+      "gap": 16,
+      "padding": 32,
+      "children": [
+        {
+          "type": "frame",
+          "id": "vdHvQ",
+          "name": "pillarIcon",
+          "width": 48,
+          "height": 48,
+          "fill": "#4F9CF720",
+          "cornerRadius": 12,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "pXZjX",
+              "name": "pillarIconInner",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "users",
+              "iconFontFamily": "lucide",
+              "fill": "#4F9CF7"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "NQWlj",
+          "name": "pillarTitle",
+          "fill": "#FFFFFF",
+          "content": "Connect",
+          "fontFamily": "Sora",
+          "fontSize": 22,
+          "fontWeight": "700",
+          "letterSpacing": -0.5
+        },
+        {
+          "type": "text",
+          "id": "zMyh7",
+          "name": "pillarDesc",
+          "fill": "#8A8A9A",
+          "textGrowth": "fixed-width",
+          "width": "fill_container",
+          "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work.",
+          "lineHeight": 1.6,
+          "fontFamily": "Inter",
+          "fontSize": 15
+        }
+      ]
+    }
+  ]
+}
