@@ -34,11 +34,10 @@ describe('NavigationContainerComponent', () => {
 
   it('should render desktop nav links', () => {
     const navLinks = fixture.nativeElement.querySelectorAll('.nav-link');
-    expect(navLinks.length).toBe(4);
+    expect(navLinks.length).toBe(3);
     expect(navLinks[0].textContent).toContain('About');
     expect(navLinks[1].textContent).toContain("Who It's For");
     expect(navLinks[2].textContent).toContain('What We Do');
-    expect(navLinks[3].textContent).toContain('Founder');
   });
 
   it('should render the Join CTA button', () => {
@@ -85,7 +84,6 @@ describe('NavigationContainerComponent', () => {
       { label: 'About', section: 'about' },
       { label: "Who It's For", section: 'who-its-for' },
       { label: 'What We Do', section: 'what-we-do' },
-      { label: 'Founder', section: 'founder' },
     ]);
   });
 

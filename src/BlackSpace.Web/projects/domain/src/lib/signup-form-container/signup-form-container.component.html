@@ -19,7 +19,7 @@
 
     <lib-form-input
       label="Email"
-      placeholder="Enter your email"
+      placeholder="you@example.com"
       [required]="true"
       fieldType="email"
       [errorMessage]="fieldError('email')"
@@ -28,31 +28,34 @@
 
     <lib-form-input
       label="Current Role / Title"
-      placeholder="Enter your role or title"
+      placeholder="e.g. Software Engineer"
       [errorMessage]="fieldError('roleTitle')"
       formControlName="roleTitle"
     />
 
     <lib-form-input
       label="Organization"
-      placeholder="Enter your organization"
+      placeholder="e.g. MDA Space"
       [errorMessage]="fieldError('organization')"
       formControlName="organization"
     />
 
     <lib-form-input
       label="How did you hear about us?"
-      placeholder="Select an option"
+      placeholder="Select one..."
       fieldType="select"
       [selectOptions]="referralSources()"
       [errorMessage]="fieldError('referralSource')"
       formControlName="referralSource"
     />
 
-    <p class="reassurance">We'll never spam you. Just community updates and opportunities.</p>
+    <p class="reassurance">
+      We'll send you a welcome email with a link to our LinkedIn group and details on the next
+      virtual meetup. No spam, ever.
+    </p>
 
     <lib-button-primary
-      label="Join the Community"
+      label="Join Black Space Canada"
       type="submit"
       [disabled]="signupForm.invalid"
       [loading]="isLoading()"

@@ -43,7 +43,6 @@ export class NavigationContainerComponent implements OnInit, OnDestroy {
     { label: 'About', section: 'about' },
     { label: "Who It's For", section: 'who-its-for' },
     { label: 'What We Do', section: 'what-we-do' },
-    { label: 'Founder', section: 'founder' },
   ];
 
   ngOnInit(): void {

@@ -28,25 +28,24 @@
     />
     <div class="problem-content">
       <p>
-        Canada's space sector is growing fast — from satellite communications to lunar exploration
-        to continental defence. But Black Canadians remain significantly underrepresented in
-        these industries.
+        Canada's space and defence sector supports over 12,000 jobs and is growing fast —
+        Canadarm3, Lunar Gateway, defence modernization, satellite programs. Billions in
+        investment are reshaping the industry.
       </p>
       <p>
-        Not because of a lack of talent. Because of a lack of networks, visibility, and
-        structured pathways into the sector.
+        Black Canadians are already part of this work. But without dedicated networks, visibility
+        remains low and pathways for the next generation stay narrow. No organization exists
+        specifically for Black Canadian engineers and technologists in space and defence.
       </p>
       <div class="stat-callout">
         <span class="stat-number">{{ statNumber() }}</span>
         <span class="stat-description">
-          The number of dedicated professional networks for Black Canadians
-          in the space and defence sector.
+          jobs in Canada's space and defence sector
         </span>
       </div>
       <p>
-        We're building the network that connects Black Canadian professionals in space and
-        defence — creating visibility for the talent that's already here and building the
-        pipeline for those who are next.
+        We're here to change that — by building the networks, the visibility, and the pipeline
+        this community needs to thrive.
       </p>
     </div>
   </div>
@@ -62,28 +61,28 @@
     <div class="audience-grid">
       <lib-audience-card
         iconName="code"
-        title="Software Engineers"
+        title="Software &amp; Systems Engineers"
         description="Writing flight software, ground systems, C2 platforms, simulations"
       />
       <lib-audience-card
-        iconName="cpu"
-        title="Hardware Engineers"
-        description="Designing circuits, testing components, building the physical tech that goes to space"
+        iconName="wrench"
+        title="Hardware &amp; Mechanical Engineers"
+        description="Designing, testing, and building space and defence hardware"
       />
       <lib-audience-card
         iconName="graduation-cap"
-        title="Students & New Grads"
-        description="Studying STEM and looking for mentors, internships, and a path into the sector"
+        title="Students &amp; Early-Career"
+        description="Studying engineering, CS, physics, or related fields and targeting the sector"
       />
       <lib-audience-card
-        iconName="rocket"
-        title="Entrepreneurs"
-        description="Building startups and ventures in space tech, defence tech, or dual-use industries"
+        iconName="briefcase"
+        title="Entrepreneurs &amp; Contractors"
+        description="Pursuing contracts in the Canadian defence and space supply chain"
       />
       <lib-audience-card
         iconName="flask-conical"
         title="Scientists & Researchers"
-        description="Conducting research in astrophysics, remote sensing, materials science, propulsion"
+        description="Working on space-related projects at Canadian institutions or agencies"
       />
     </div>
   </div>
@@ -100,17 +99,17 @@
       <lib-pillar-card
         iconName="network"
         title="Networking"
-        description="We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector."
+        description="We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector. Quarterly meetups, direct introductions, and a growing community of peers."
       />
       <lib-pillar-card
         iconName="eye"
         title="Visibility"
-        description="We spotlight the work Black Canadians are already doing in space and defence — through stories, events, and public advocacy."
+        description="We create visibility for Black Canadians already doing the work — profiling engineers, scientists, and technologists at CSA, MDA, Telesat, CAE, L3Harris, DND, and beyond. The talent exists. We make sure it's seen."
       />
       <lib-pillar-card
-        iconName="git-branch"
+        iconName="route"
         title="Pipeline"
-        description="We create pathways for the next generation to enter and thrive in the space and defence sector — mentorship, internships, and career support."
+        description="We open pathways for the next generation to enter and thrive in the industry — connecting students to mentors, surfacing scholarships, internships, and procurement opportunities."
       />
     </div>
   </div>
@@ -165,20 +164,17 @@
     <div class="footer-top">
       <span class="footer-logo">BLACK SPACE CANADA</span>
       <div class="footer-links">
-        <a href="#about" (click)="onFooterNav($event, 'about')">About</a>
-        <a href="#who-its-for" (click)="onFooterNav($event, 'who-its-for')">Who It's For</a>
-        <a href="#what-we-do" (click)="onFooterNav($event, 'what-we-do')">What We Do</a>
-        <a href="mailto:hello@blackspace.ca">Contact</a>
+        <a href="mailto:hello@blackspace.ca">hello@blackspace.ca</a>
+        <a
+          class="footer-social-link"
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <lib-lucide-icon name="linkedin" [size]="14" color="#8A8A9A" />
+          <span>LinkedIn Group</span>
+        </a>
       </div>
-      <a
-        class="footer-social"
-        href="https://linkedin.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-      >
-        <lib-lucide-icon name="linkedin" [size]="20" color="#FFFFFF" />
-      </a>
     </div>
     <div class="footer-bottom">
       <p class="disclaimer">

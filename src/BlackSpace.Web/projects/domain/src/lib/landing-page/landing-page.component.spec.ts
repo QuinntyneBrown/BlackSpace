@@ -85,7 +85,7 @@ describe('LandingPageComponent', () => {
     const stat = fixture.nativeElement.querySelector('.stat-callout');
     expect(stat).toBeTruthy();
     const statNumber = fixture.nativeElement.querySelector('.stat-number');
-    expect(statNumber.textContent).toContain('0');
+    expect(statNumber.textContent).toContain('12,000+');
   });
 
   it('should render who-its-for section with id', () => {
@@ -154,7 +154,9 @@ describe('LandingPageComponent', () => {
 
   it('should render footer links', () => {
     const links = fixture.nativeElement.querySelectorAll('.footer-links a');
-    expect(links.length).toBe(4);
+    expect(links.length).toBe(2);
+    expect(links[0].textContent).toContain('hello@blackspace.ca');
+    expect(links[1].textContent).toContain('LinkedIn Group');
   });
 
   it('should render disclaimer', () => {

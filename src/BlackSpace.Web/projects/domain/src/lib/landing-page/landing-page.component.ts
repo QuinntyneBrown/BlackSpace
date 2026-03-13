@@ -50,7 +50,7 @@ export class LandingPageComponent implements OnInit {
   }
 
   statNumber(): string {
-    return '0';
+    return '12,000+';
   }
 
   scrollToJoin(): void {
