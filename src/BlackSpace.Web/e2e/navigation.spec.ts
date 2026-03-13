@@ -13,8 +13,8 @@ test.describe('Navigation', () => {
   });
 
   test.describe('Desktop', () => {
-    test('nav links are visible @desktop @tablet', async ({ }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('nav links are visible @desktop', async ({ }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       await expect(nav.navbar).toBeVisible();
       const labels = await nav.getDesktopLinkLabels();
       expect(labels).toContain('About');
@@ -23,21 +23,21 @@ test.describe('Navigation', () => {
       expect(labels).toContain('Founder');
     });
 
-    test('join button is visible in nav @desktop @tablet', async ({ }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('join button is visible in nav @desktop', async ({ }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       await expect(nav.joinButton).toBeVisible();
     });
 
-    test('clicking About scrolls to about section @desktop @tablet', async ({ page }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('clicking About scrolls to about section @desktop', async ({ page }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       await nav.clickLink('About');
       await page.waitForTimeout(1000);
       const aboutSection = landingPage.problemSection;
       await expect(aboutSection).toBeInViewport();
     });
 
-    test('clicking What We Do scrolls to that section @desktop @tablet', async ({ page }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('clicking What We Do scrolls to that section @desktop', async ({ page }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       await nav.clickLink('What We Do');
       await page.waitForTimeout(1000);
       await expect(landingPage.whatWeDoSection).toBeInViewport();

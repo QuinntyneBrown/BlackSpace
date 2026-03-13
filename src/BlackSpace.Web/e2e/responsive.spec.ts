@@ -10,8 +10,8 @@ test.describe('Responsive Layout', () => {
   });
 
   test.describe('Desktop Layout', () => {
-    test('audience cards are in a multi-column grid @desktop @tablet', async ({ page }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('audience cards are in a multi-column grid @desktop', async ({ page }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       await landingPage.whoItsForSection.scrollIntoViewIfNeeded();
 
       const cards = landingPage.audienceCards;
@@ -29,8 +29,8 @@ test.describe('Responsive Layout', () => {
       expect(Math.abs(box1!.x - box2!.x)).toBeGreaterThan(50);
     });
 
-    test('pillar cards are in a 3-column grid @desktop @tablet', async ({ page }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('pillar cards are in a 3-column grid @desktop', async ({ page }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       await landingPage.whatWeDoSection.scrollIntoViewIfNeeded();
 
       const cards = landingPage.pillarCards;
@@ -48,8 +48,8 @@ test.describe('Responsive Layout', () => {
       expect(box3!.x).toBeGreaterThan(box2!.x);
     });
 
-    test('hero buttons are horizontally aligned @desktop @tablet', async ({ page }, testInfo) => {
-      test.skip(testInfo.project.name === 'mobile', 'Desktop-only test');
+    test('hero buttons are horizontally aligned @desktop', async ({ page }, testInfo) => {
+      test.skip(testInfo.project.name !== 'desktop', 'Desktop-only test');
       const joinBtn = landingPage.joinButton;
       const learnBtn = landingPage.learnMoreButton;
 
