@@ -28,27 +28,8 @@ const ICON_PATHS: Record<string, string> = {
 
 @Component({
   selector: 'lib-lucide-icon',
-  template: `
-    <svg
-      [attr.width]="size()"
-      [attr.height]="size()"
-      viewBox="0 0 24 24"
-      fill="none"
-      [attr.stroke]="color()"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    >
-      <path [attr.d]="pathData()" />
-    </svg>
-  `,
-  styles: `
-    :host {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-  `,
+  templateUrl: './lucide-icon.component.html',
+  styleUrl: './lucide-icon.component.scss',
 })
 export class LucideIconComponent {
   name = input.required<string>();

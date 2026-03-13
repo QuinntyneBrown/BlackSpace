@@ -2,62 +2,8 @@ import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'lib-button-primary',
-  template: `
-    <button
-      [type]="type()"
-      [disabled]="disabled() || loading()"
-      [class.loading]="loading()"
-      [class.disabled]="disabled()"
-      (click)="onClick()"
-    >
-      @if (loading()) {
-        <span class="spinner"></span>
-      }
-      {{ label() }}
-    </button>
-  `,
-  styles: `
-    :host {
-      display: inline-block;
-    }
-    button {
-      background: #4F9CF7;
-      color: #FFFFFF;
-      font-family: 'Inter', sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      border: none;
-      border-radius: 8px;
-      padding: 16px 32px;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: opacity 0.2s;
-    }
-    button:hover:not(:disabled) {
-      opacity: 0.9;
-    }
-    button.loading {
-      opacity: 0.7;
-      cursor: wait;
-    }
-    button.disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
-    .spinner {
-      width: 16px;
-      height: 16px;
-      border: 2px solid #FFFFFF40;
-      border-top-color: #FFFFFF;
-      border-radius: 50%;
-      animation: spin 0.6s linear infinite;
-    }
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  `,
+  templateUrl: './button-primary.component.html',
+  styleUrl: './button-primary.component.scss',
 })
 export class ButtonPrimaryComponent {
   label = input.required<string>();

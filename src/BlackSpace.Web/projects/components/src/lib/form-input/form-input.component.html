@@ -1,0 +1,39 @@
+@if (label()) {
+  <label class="field-label">
+    {{ label() }}
+    @if (required()) {
+      <span class="required">*</span>
+    }
+  </label>
+}
+@if (fieldType() === 'select') {
+  <select
+    class="field-control"
+    [class.has-error]="!!errorMessage()"
+    [disabled]="isDisabled"
+    [value]="value"
+    (change)="onSelectChange($event)"
+    (blur)="onTouched()"
+  >
+    @if (placeholder()) {
+      <option value="" disabled [selected]="!value">{{ placeholder() }}</option>
+    }
+    @for (option of selectOptions(); track option) {
+      <option [value]="option">{{ option }}</option>
+    }
+  </select>
+} @else {
+  <input
+    class="field-control"
+    [class.has-error]="!!errorMessage()"
+    [type]="fieldType()"
+    [placeholder]="placeholder()"
+    [disabled]="isDisabled"
+    [value]="value"
+    (input)="onInputChange($event)"
+    (blur)="onTouched()"
+  />
+}
+@if (errorMessage()) {
+  <span class="error-message">{{ errorMessage() }}</span>
+}

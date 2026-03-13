@@ -1,0 +1,193 @@
+<lib-navigation-container (joinClicked)="scrollToJoin()" />
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <div class="hero-tag">
+      <span class="blue-dot"></span>
+      Building Canada's Space Future
+    </div>
+    <h1 class="hero-headline">Black Canadians in<br/>Space &amp; Defence</h1>
+    <p class="hero-subheadline">
+      Connecting, elevating, and growing the community of Black Canadian engineers,
+      scientists, and technologists in space and defence.
+    </p>
+    <div class="hero-actions">
+      <lib-button-primary label="Join the Community" (clicked)="scrollToJoin()" />
+      <lib-button-secondary label="Learn More" (clicked)="scrollToAbout()" />
+    </div>
+  </div>
+</section>
+
+<!-- Problem Section -->
+<section class="problem" id="about">
+  <div class="section-container">
+    <lib-section-header
+      label="WHY THIS EXISTS"
+      headline="The talent is here.\nThe network wasn't."
+    />
+    <div class="problem-content">
+      <p>
+        Canada's space sector is growing fast — from satellite communications to lunar exploration
+        to continental defence. But Black Canadians remain significantly underrepresented in
+        these industries.
+      </p>
+      <p>
+        Not because of a lack of talent. Because of a lack of networks, visibility, and
+        structured pathways into the sector.
+      </p>
+      <div class="stat-callout">
+        <span class="stat-number">{{ statNumber() }}</span>
+        <span class="stat-description">
+          The number of dedicated professional networks for Black Canadians
+          in the space and defence sector.
+        </span>
+      </div>
+      <p>
+        We're building the network that connects Black Canadian professionals in space and
+        defence — creating visibility for the talent that's already here and building the
+        pipeline for those who are next.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Who It's For Section -->
+<section class="who-its-for" id="who-its-for">
+  <div class="section-container">
+    <lib-section-header
+      label="WHO IT'S FOR"
+      headline="Is this community for you?"
+    />
+    <div class="audience-grid">
+      <lib-audience-card
+        iconName="code"
+        title="Software Engineers"
+        description="Writing flight software, ground systems, C2 platforms, simulations"
+      />
+      <lib-audience-card
+        iconName="cpu"
+        title="Hardware Engineers"
+        description="Designing circuits, testing components, building the physical tech that goes to space"
+      />
+      <lib-audience-card
+        iconName="graduation-cap"
+        title="Students & New Grads"
+        description="Studying STEM and looking for mentors, internships, and a path into the sector"
+      />
+      <lib-audience-card
+        iconName="rocket"
+        title="Entrepreneurs"
+        description="Building startups and ventures in space tech, defence tech, or dual-use industries"
+      />
+      <lib-audience-card
+        iconName="flask-conical"
+        title="Scientists & Researchers"
+        description="Conducting research in astrophysics, remote sensing, materials science, propulsion"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="what-we-do" id="what-we-do">
+  <div class="section-container">
+    <lib-section-header
+      label="WHAT WE DO"
+      headline="What we actually do."
+    />
+    <div class="pillar-grid">
+      <lib-pillar-card
+        iconName="network"
+        title="Networking"
+        description="We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector."
+      />
+      <lib-pillar-card
+        iconName="eye"
+        title="Visibility"
+        description="We spotlight the work Black Canadians are already doing in space and defence — through stories, events, and public advocacy."
+      />
+      <lib-pillar-card
+        iconName="git-branch"
+        title="Pipeline"
+        description="We create pathways for the next generation to enter and thrive in the space and defence sector — mentorship, internships, and career support."
+      />
+    </div>
+  </div>
+</section>
+
+<!-- Signup Section -->
+<section class="signup" id="join">
+  <div class="section-container">
+    <lib-section-header
+      label="JOIN US"
+      headline="Join Black Space Canada"
+    />
+    <div class="signup-form-wrapper">
+      <lib-signup-form-container />
+    </div>
+  </div>
+</section>
+
+<!-- Founder Section -->
+<section class="founder" id="founder">
+  <div class="section-container">
+    <div class="founder-card">
+      <img
+        class="founder-photo"
+        src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop"
+        alt="Quinn Brown"
+      />
+      <div class="founder-info">
+        <h3 class="founder-name">Quinn Brown</h3>
+        <p class="founder-title">Senior .NET Consultant &amp; Software Quality Lead, MDA Space</p>
+        <p class="founder-bio">
+          Currently building software for Canadarm3 on NASA's Lunar Gateway program.
+          Started Black Space Canada because this community should have existed years ago.
+        </p>
+        <a
+          class="founder-linkedin"
+          href="https://linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <lib-lucide-icon name="linkedin" [size]="20" color="#4F9CF7" />
+          <span>Connect on LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="section-container">
+    <div class="footer-top">
+      <span class="footer-logo">BLACK SPACE CANADA</span>
+      <div class="footer-links">
+        <a href="#about" (click)="onFooterNav($event, 'about')">About</a>
+        <a href="#who-its-for" (click)="onFooterNav($event, 'who-its-for')">Who It's For</a>
+        <a href="#what-we-do" (click)="onFooterNav($event, 'what-we-do')">What We Do</a>
+        <a href="mailto:hello@blackspace.ca">Contact</a>
+      </div>
+      <a
+        class="footer-social"
+        href="https://linkedin.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+      >
+        <lib-lucide-icon name="linkedin" [size]="20" color="#FFFFFF" />
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <p class="disclaimer">
+        Black Space Canada is an independent community initiative.
+        Not affiliated with any employer or government agency.
+      </p>
+      <p class="copyright">&copy; 2026 Black Space Canada. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<lib-cookie-consent-manager />

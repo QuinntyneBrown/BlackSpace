@@ -1,0 +1,20 @@
+@if (visible()) {
+  <div class="toast" [class]="'toast toast-' + type()">
+    <div class="icon-circle" [class]="'icon-circle icon-circle-' + type()">
+      @if (type() === 'success') {
+        <lib-lucide-icon name="check" [size]="18" [color]="iconColor()" />
+      } @else if (type() === 'warning') {
+        <lib-lucide-icon name="triangle-alert" [size]="18" [color]="iconColor()" />
+      } @else {
+        <lib-lucide-icon name="circle-alert" [size]="18" [color]="iconColor()" />
+      }
+    </div>
+    <div class="content">
+      <span class="title">{{ title() }}</span>
+      <span class="description">{{ description() }}</span>
+    </div>
+    <button class="close-btn" (click)="onClose()">
+      <lib-lucide-icon name="x" [size]="18" color="#52526A" />
+    </button>
+  </div>
+}

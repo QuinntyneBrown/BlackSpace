@@ -1,0 +1,7 @@
+<div class="cookie-banner">
+  <p class="message">{{ message() }}</p>
+  <div class="actions">
+    <lib-button-primary label="Accept" (clicked)="accepted.emit()" />
+    <lib-button-secondary label="Learn More" (clicked)="learnMore.emit()" />
+  </div>
+</div>

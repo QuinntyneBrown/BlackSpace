@@ -1,0 +1,10 @@
+<div class="success-state">
+  <div class="icon-circle">
+    <lib-lucide-icon name="check" [size]="32" color="#32D74B" />
+  </div>
+  <h2 class="title">{{ title() }}</h2>
+  @if (description()) {
+    <p class="description">{{ description() }}</p>
+  }
+  <div class="accent-line"></div>
+</div>

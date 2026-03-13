@@ -1,0 +1,33 @@
+<nav
+  class="navbar"
+  [style.background-color]="'rgba(7, 8, 15, ' + scrollOpacity() + ')'"
+>
+  <div class="nav-inner">
+    <a class="logo" href="#" (click)="scrollToTop($event)">
+      <span class="logo-full">BLACK SPACE CANADA</span>
+      <span class="logo-short">BLACK SPACE</span>
+    </a>
+
+    <div class="nav-links">
+      @for (link of menuLinks; track link.section) {
+        <a
+          class="nav-link"
+          [href]="'#' + link.section"
+          (click)="onNavigate($event, link.section)"
+        >{{ link.label }}</a>
+      }
+      <lib-button-primary label="Join" (clicked)="onJoinClick()" />
+    </div>
+
+    <button class="hamburger" (click)="toggleMobileMenu()" aria-label="Open menu">
+      <lib-lucide-icon name="menu" [size]="24" color="#FFFFFF" />
+    </button>
+  </div>
+</nav>
+
+<lib-mobile-menu-overlay
+  [isOpen]="mobileMenuOpen()"
+  [links]="menuLinks"
+  (closed)="closeMobileMenu()"
+  (navigate)="onMobileNavigate($event)"
+/>

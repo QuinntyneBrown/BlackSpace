@@ -14,26 +14,8 @@ import { CookieBannerComponent } from 'components';
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [CookieBannerComponent],
-  template: `
-    @if (showBanner()) {
-      <div class="cookie-consent-wrapper">
-        <lib-cookie-banner
-          message="We use cookies to improve your experience. By continuing to use this site, you agree to our use of cookies."
-          (accepted)="onAccept()"
-          (learnMore)="onLearnMore()"
-        />
-      </div>
-    }
-  `,
-  styles: `
-    .cookie-consent-wrapper {
-      position: fixed;
-      bottom: 1rem;
-      left: 1rem;
-      right: 1rem;
-      z-index: 9999;
-    }
-  `,
+  templateUrl: './cookie-consent-manager.component.html',
+  styleUrl: './cookie-consent-manager.component.scss',
 })
 export class CookieConsentManagerComponent implements OnInit {
   private readonly platformId = inject(PLATFORM_ID);

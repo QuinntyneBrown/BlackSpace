@@ -1,0 +1,18 @@
+@if (isOpen()) {
+  <div class="overlay">
+    <div class="top-bar">
+      <span class="logo">BLACK SPACE</span>
+      <button class="close-btn" (click)="closed.emit()">
+        <lib-lucide-icon name="x" [size]="24" color="#FFFFFF" />
+      </button>
+    </div>
+    <nav class="nav-links">
+      @for (link of links(); track link.section) {
+        <a class="nav-link" (click)="onNavigate(link.section)">{{ link.label }}</a>
+      }
+    </nav>
+    <div class="bottom-cta">
+      <lib-button-primary label="Join the Community" (clicked)="onNavigate('join')" />
+    </div>
+  </div>
+}

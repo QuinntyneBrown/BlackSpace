@@ -1,0 +1,12 @@
+<button
+  [type]="type()"
+  [disabled]="disabled() || loading()"
+  [class.loading]="loading()"
+  [class.disabled]="disabled()"
+  (click)="onClick()"
+>
+  @if (loading()) {
+    <span class="spinner"></span>
+  }
+  {{ label() }}
+</button>

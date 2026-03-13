@@ -1,0 +1,18 @@
+@if (isOpen()) {
+  <div class="backdrop" (click)="onCancel()">
+    <div class="dialog" (click)="$event.stopPropagation()">
+      <h2 class="title">{{ title() }}</h2>
+      <p class="body">{{ body() }}</p>
+      <div class="actions">
+        <button class="btn-cancel" (click)="onCancel()">{{ cancelLabel() }}</button>
+        <button
+          class="btn-confirm"
+          [class.danger]="confirmVariant() === 'danger'"
+          (click)="onConfirm()"
+        >
+          {{ confirmLabel() }}
+        </button>
+      </div>
+    </div>
+  </div>
+}
