@@ -1,0 +1,34 @@
+<div class="admin-shell">
+  <mat-toolbar color="primary" class="admin-toolbar">
+    <button mat-icon-button (click)="toggleSidenav()" aria-label="Toggle menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="toolbar-title">Black Space Admin</span>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+      [mode]="sidenavMode()"
+      [opened]="sidenavOpened()"
+      (closed)="onSidenavClosed()"
+      class="sidenav"
+    >
+      <mat-nav-list>
+        @for (link of navLinks; track link.route) {
+          <a
+            mat-list-item
+            [routerLink]="link.route"
+            routerLinkActive="active-link"
+          >
+            <mat-icon matListItemIcon>{{ link.icon }}</mat-icon>
+            <span matListItemTitle>{{ link.label }}</span>
+          </a>
+        }
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="main-content">
+      <router-outlet />
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

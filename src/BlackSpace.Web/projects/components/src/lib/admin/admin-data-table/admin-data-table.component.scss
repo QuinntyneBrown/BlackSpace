@@ -1,0 +1,31 @@
+.table-container {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #2A2A3A;
+  overflow: hidden;
+  background-color: #1E1E2E;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(30, 30, 46, 0.8);
+  z-index: 10;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px 16px;
+  color: #8A8A9A;
+  font-size: 16px;
+}
+
+table {
+  width: 100%;
+}

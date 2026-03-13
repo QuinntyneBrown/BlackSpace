@@ -60,7 +60,7 @@ export class NavigationContainerComponent implements OnInit, OnDestroy {
 
   onScroll(): void {
     const scrollY = window.scrollY;
-    const opacity = Math.min(0.5 + scrollY / 400, 1);
+    const opacity = Math.min(0.5 + scrollY / 400, 0.878);
     this.scrollOpacity.set(opacity);
   }
 

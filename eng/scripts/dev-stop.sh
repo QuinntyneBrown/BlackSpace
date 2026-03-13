@@ -60,21 +60,28 @@ fi
 
 # ── 1. Frontend ─────────────────────────────────────────────────────────────
 echo ""
-echo "[1/3] Frontend..."
+echo "[1/4] Frontend..."
 STEP_START=$(now_ms)
 stop_pid "Angular" "frontend"
 log_metric "Angular shutdown" "$(elapsed $STEP_START)"
 
-# ── 2. Backend ──────────────────────────────────────────────────────────────
+# ── 2. Admin Frontend ─────────────────────────────────────────────────────
 echo ""
-echo "[2/3] Backend..."
+echo "[2/4] Admin Frontend..."
+STEP_START=$(now_ms)
+stop_pid "Angular Admin" "admin-frontend"
+log_metric "Angular Admin shutdown" "$(elapsed $STEP_START)"
+
+# ── 3. Backend ──────────────────────────────────────────────────────────────
+echo ""
+echo "[3/4] Backend..."
 STEP_START=$(now_ms)
 stop_pid ".NET API" "backend"
 log_metric ".NET API shutdown" "$(elapsed $STEP_START)"
 
-# ── 3. Database ─────────────────────────────────────────────────────────────
+# ── 4. Database ─────────────────────────────────────────────────────────────
 echo ""
-echo "[3/3] PostgreSQL..."
+echo "[4/4] PostgreSQL..."
 STEP_START=$(now_ms)
 if [ -z "${DOCKER_BIN:-}" ]; then
   echo "  Docker CLI not found, skipping PostgreSQL shutdown."

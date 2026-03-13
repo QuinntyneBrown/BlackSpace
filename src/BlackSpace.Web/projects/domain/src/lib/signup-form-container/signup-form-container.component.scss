@@ -13,8 +13,17 @@ form {
   flex-direction: column;
   gap: 20px;
 }
+lib-button-primary {
+  display: block;
+  width: 100%;
+}
+lib-button-primary ::ng-deep button {
+  width: 100%;
+  justify-content: center;
+}
 .reassurance {
   font-size: 13px;
   color: #52526A;
+  text-align: center;
   margin: 0;
 }

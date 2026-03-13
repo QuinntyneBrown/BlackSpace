@@ -1,0 +1,38 @@
+.stat-card {
+  background-color: #1E1E2E !important;
+  border: 1px solid #2A2A3A !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 24px;
+}
+
+.icon-container {
+  display: none;
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stat-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8A8A9A;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFFFFF;
+}

@@ -82,7 +82,7 @@ describe('NavigationContainerComponent', () => {
   it('should have correct menu links', () => {
     expect(component.menuLinks).toEqual([
       { label: 'About', section: 'about' },
-      { label: "Who It's For", section: 'who-its-for' },
+      { label: "Who It's For", section: 'who-its-for', hideTablet: true },
       { label: 'What We Do', section: 'what-we-do' },
     ]);
   });
@@ -93,22 +93,22 @@ describe('NavigationContainerComponent', () => {
 
   it('should update scroll opacity on scroll', () => {
     // Simulate scroll
-    Object.defineProperty(window, 'scrollY', { value: 200, configurable: true });
+    Object.defineProperty(window, 'scrollY', { value: 100, configurable: true });
     component.onScroll();
-    expect(component.scrollOpacity()).toBe(0.5 + 200 / 400);
+    expect(component.scrollOpacity()).toBe(0.5 + 100 / 400); // 0.75, under cap
 
     Object.defineProperty(window, 'scrollY', { value: 800, configurable: true });
     component.onScroll();
-    expect(component.scrollOpacity()).toBe(1); // capped at 1
+    expect(component.scrollOpacity()).toBe(0.878); // capped at 0.878
 
     // Reset
     Object.defineProperty(window, 'scrollY', { value: 0, configurable: true });
   });
 
-  it('should cap scroll opacity at 1', () => {
+  it('should cap scroll opacity at 0.878', () => {
     Object.defineProperty(window, 'scrollY', { value: 2000, configurable: true });
     component.onScroll();
-    expect(component.scrollOpacity()).toBe(1);
+    expect(component.scrollOpacity()).toBe(0.878);
     Object.defineProperty(window, 'scrollY', { value: 0, configurable: true });
   });
 

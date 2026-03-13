@@ -10,6 +10,7 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Member> Members => Set<Member>();
+    public DbSet<SiteContent> SiteContents => Set<SiteContent>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -25,6 +26,14 @@ public class AppDbContext : DbContext
             entity.Property(m => m.Organization).HasMaxLength(200);
             entity.Property(m => m.ReferralSource).HasMaxLength(500);
             entity.Property(m => m.IpAddress).HasMaxLength(45);
+        });
+
+        modelBuilder.Entity<SiteContent>(entity =>
+        {
+            entity.HasKey(s => s.Id);
+            entity.Property(s => s.Key).IsRequired().HasMaxLength(100);
+            entity.HasIndex(s => s.Key).IsUnique();
+            entity.Property(s => s.Value).IsRequired().HasMaxLength(4000);
         });
     }
 }

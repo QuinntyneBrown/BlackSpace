@@ -1,0 +1,182 @@
+@use '@angular/material' as mat;
+
+// ── Design tokens ──────────────────────────────────────
+$bg:          #121218;
+$surface:     #1E1E2E;
+$border:      #2A2A3A;
+$primary:     #4F9CF7;
+$text-primary:#FFFFFF;
+$text-secondary:#8A8A9A;
+$table-header:#16161F;
+$error:       #FF3B30;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: $bg;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: $text-primary;
+}
+
+// Angular Material dark theme
+$dark-theme: mat.define-theme((
+  color: (
+    theme-type: dark,
+    primary: mat.$blue-palette,
+  ),
+));
+
+html {
+  @include mat.all-component-themes($dark-theme);
+  @include mat.color-variants-backwards-compatibility($dark-theme);
+}
+
+// ── Global overrides for design-system alignment ───────
+
+// Toolbar
+.mat-toolbar {
+  background-color: $surface !important;
+  color: $text-primary !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  font-family: 'Inter', sans-serif !important;
+  border-bottom: 1px solid $border;
+}
+
+// Mat-card surfaces
+.mat-mdc-card {
+  background-color: $surface !important;
+  border: 1px solid $border;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+// Button overrides: primary (flat)
+.mat-mdc-unelevated-button.mat-primary,
+.mat-mdc-raised-button.mat-primary {
+  --mdc-filled-button-container-color: #{$primary} !important;
+  --mdc-filled-button-label-text-color: #{$text-primary} !important;
+  background-color: $primary !important;
+  color: $text-primary !important;
+  border-radius: 4px !important;
+  padding: 10px 20px !important;
+  height: auto !important;
+  line-height: normal !important;
+  .mat-icon {
+    color: $text-primary !important;
+  }
+}
+
+// Button overrides: stroked/outlined
+.mat-mdc-outlined-button,
+.mat-mdc-outlined-button.mat-primary {
+  border: 1px solid $border !important;
+  border-radius: 4px !important;
+  color: $text-secondary !important;
+  padding: 10px 20px !important;
+  height: auto !important;
+  line-height: normal !important;
+  .mat-icon {
+    color: $text-secondary !important;
+  }
+}
+
+// Table overrides
+.mat-mdc-table {
+  background-color: $surface !important;
+}
+
+.mat-mdc-header-row {
+  background-color: $table-header !important;
+}
+
+.mat-mdc-header-cell {
+  color: $text-secondary !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+
+.mat-mdc-cell {
+  color: $text-primary !important;
+  border-bottom-color: $border !important;
+}
+
+.mat-mdc-row {
+  border-bottom-color: $border !important;
+}
+
+// Paginator
+.mat-mdc-paginator {
+  background-color: $table-header !important;
+  color: $text-secondary !important;
+}
+
+// Sidenav
+.mat-sidenav {
+  background-color: $surface !important;
+  border-right: 1px solid $border !important;
+}
+
+.mat-sidenav-content {
+  background-color: $bg !important;
+}
+
+// Nav-list items
+.mat-mdc-nav-list .mat-mdc-list-item {
+  --mdc-list-list-item-label-text-color: #{$text-secondary};
+  --mdc-list-list-item-label-text-size: 14px;
+  --mdc-list-list-item-label-text-weight: 500;
+  color: $text-secondary !important;
+  border-radius: 4px;
+  margin: 2px 0;
+
+  .mat-icon {
+    color: $text-secondary !important;
+  }
+
+  &.active-link {
+    background-color: transparent !important;
+    --mdc-list-list-item-label-text-color: #{$primary};
+    color: $primary !important;
+
+    .mat-icon {
+      color: $primary !important;
+    }
+
+    span[matlistitemtitle] {
+      color: $primary !important;
+    }
+  }
+}
+
+// Form fields
+.mat-mdc-form-field {
+  .mdc-text-field {
+    background-color: $bg !important;
+  }
+}
+
+// Chips
+.mat-mdc-chip {
+  background-color: $bg !important;
+  border: 1px solid $border !important;
+}
+
+// Snackbar
+.mat-mdc-snack-bar-container {
+  .mdc-snackbar__surface {
+    background-color: $surface !important;
+  }
+}
+
+// Dialog
+.mat-mdc-dialog-container {
+  .mdc-dialog__surface {
+    background-color: $surface !important;
+    border: 1px solid $border !important;
+    border-radius: 12px !important;
+  }
+}

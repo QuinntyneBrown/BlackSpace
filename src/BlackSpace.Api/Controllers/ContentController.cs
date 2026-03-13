@@ -7,13 +7,15 @@ namespace BlackSpace.Api.Controllers;
 [Route("api/[controller]")]
 public class ContentController(
     IMemberRepository repository,
+    IContentRepository contentRepository,
     IConfiguration configuration) : ControllerBase
 {
     [HttpGet("stats")]
     public async Task<IActionResult> GetStats(CancellationToken cancellationToken)
     {
         var memberCount = await repository.GetCountAsync(cancellationToken);
-        var nextMeetupDate = configuration["Community:NextMeetupDate"];
+        var nextMeetupDate = await contentRepository.GetNextMeetupDateAsync(cancellationToken)
+            ?? configuration["Community:NextMeetupDate"];
 
         return Ok(new
         {
@@ -23,16 +25,10 @@ public class ContentController(
     }
 
     [HttpGet("referral-sources")]
-    public IActionResult GetReferralSources()
+    public async Task<IActionResult> GetReferralSources(CancellationToken cancellationToken)
     {
-        return Ok(new[]
-        {
-            "LinkedIn",
-            "Twitter/X",
-            "A friend or colleague",
-            "CSA/DND event",
-            "Google search",
-            "Other"
-        });
+        var sources = await contentRepository.GetReferralSourcesAsync(cancellationToken);
+
+        return Ok(sources);
     }
 }

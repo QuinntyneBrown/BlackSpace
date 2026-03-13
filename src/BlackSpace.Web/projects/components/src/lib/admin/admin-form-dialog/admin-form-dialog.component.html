@@ -1,0 +1,42 @@
+<h2 mat-dialog-title>{{ dialogData.title }}</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" class="form-fields">
+    @for (field of dialogData.fields; track field.name) {
+      @if (field.type === 'select') {
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>{{ field.label }}</mat-label>
+          <mat-select [formControlName]="field.name">
+            @for (option of field.options ?? []; track option.value) {
+              <mat-option [value]="option.value">{{ option.label }}</mat-option>
+            }
+          </mat-select>
+          @if (field.required && form.get(field.name)?.hasError('required') && form.get(field.name)?.touched) {
+            <mat-error>{{ field.label }} is required</mat-error>
+          }
+        </mat-form-field>
+      } @else if (field.type === 'textarea') {
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>{{ field.label }}</mat-label>
+          <textarea matInput [formControlName]="field.name" rows="3"></textarea>
+          @if (field.required && form.get(field.name)?.hasError('required') && form.get(field.name)?.touched) {
+            <mat-error>{{ field.label }} is required</mat-error>
+          }
+        </mat-form-field>
+      } @else {
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>{{ field.label }}</mat-label>
+          <input matInput [type]="field.type" [formControlName]="field.name" />
+          @if (field.required && form.get(field.name)?.hasError('required') && form.get(field.name)?.touched) {
+            <mat-error>{{ field.label }} is required</mat-error>
+          }
+        </mat-form-field>
+      }
+    }
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button color="primary" (click)="onSave()">Save</button>
+</mat-dialog-actions>

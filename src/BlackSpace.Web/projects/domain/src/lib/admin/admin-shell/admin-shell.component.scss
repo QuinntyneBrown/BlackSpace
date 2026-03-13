@@ -1,0 +1,46 @@
+.admin-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.admin-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 56px !important;
+  min-height: 56px !important;
+  padding: 0 24px;
+
+  @media (max-width: 1023px) {
+    padding: 0 16px;
+  }
+}
+
+.toolbar-title {
+  margin-left: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.sidenav-container {
+  flex: 1;
+  margin-top: 56px;
+}
+
+.sidenav {
+  width: 240px;
+  padding-top: 24px;
+}
+
+.main-content {
+  padding: 0;
+}
+
+.active-link {
+  background-color: transparent !important;
+}

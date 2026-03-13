@@ -1,0 +1,70 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - button "Toggle menu" [ref=e6] [cursor=pointer]:
+      - img [ref=e7]: menu
+    - generic [ref=e10]: Black Space Admin
+  - generic [ref=e16]:
+    - heading "Content Management" [level=1] [ref=e17]
+    - generic [ref=e18]:
+      - generic [ref=e21]: Next Meetup Date
+      - generic [ref=e23]:
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - text: Date
+            - generic [ref=e28]: "*"
+          - textbox "Date" [ref=e30]: 2026-04-15
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - text: Time
+            - generic [ref=e36]: "*"
+          - textbox "Time" [ref=e38]: 14:00
+        - button "Save" [ref=e40]:
+          - generic [ref=e41]: Save
+    - generic [ref=e44]:
+      - generic [ref=e47]: Referral Sources
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - row "LinkedIn Remove" [ref=e50]:
+            - gridcell "LinkedIn" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52]: LinkedIn
+            - gridcell "Remove" [ref=e53]:
+              - button "Remove" [ref=e54] [cursor=pointer]:
+                - img [ref=e55]: cancel
+          - row "Twitter/X Remove" [ref=e56]:
+            - gridcell "Twitter/X" [ref=e57] [cursor=pointer]:
+              - generic [ref=e58]: Twitter/X
+            - gridcell "Remove" [ref=e59]:
+              - button "Remove" [ref=e60] [cursor=pointer]:
+                - img [ref=e61]: cancel
+          - row "A friend or colleague Remove" [ref=e62]:
+            - gridcell "A friend or colleague" [ref=e63] [cursor=pointer]:
+              - generic [ref=e64]: A friend or colleague
+            - gridcell "Remove" [ref=e65]:
+              - button "Remove" [ref=e66] [cursor=pointer]:
+                - img [ref=e67]: cancel
+          - row "CSA/DND event Remove" [ref=e68]:
+            - gridcell "CSA/DND event" [ref=e69] [cursor=pointer]:
+              - generic [ref=e70]: CSA/DND event
+            - gridcell "Remove" [ref=e71]:
+              - button "Remove" [ref=e72] [cursor=pointer]:
+                - img [ref=e73]: cancel
+          - row "Google search Remove" [ref=e74]:
+            - gridcell "Google search" [ref=e75] [cursor=pointer]:
+              - generic [ref=e76]: Google search
+            - gridcell "Remove" [ref=e77]:
+              - button "Remove" [ref=e78] [cursor=pointer]:
+                - img [ref=e79]: cancel
+          - row "Other Remove" [ref=e80]:
+            - gridcell "Other" [ref=e81] [cursor=pointer]:
+              - generic [ref=e82]: Other
+            - gridcell "Remove" [ref=e83]:
+              - button "Remove" [ref=e84] [cursor=pointer]:
+                - img [ref=e85]: cancel
+        - generic [ref=e86]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: New Source
+            - textbox "New Source" [ref=e92]
+          - button "Add" [ref=e94]:
+            - generic [ref=e95]: Add
+        - button "Save" [ref=e98]:
+          - generic [ref=e99]: Save

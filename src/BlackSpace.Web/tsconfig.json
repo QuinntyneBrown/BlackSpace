@@ -58,6 +58,12 @@
     },
     {
       "path": "./projects/blackspace/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/blackspace-admin/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/blackspace-admin/tsconfig.spec.json"
     }
   ]
 }

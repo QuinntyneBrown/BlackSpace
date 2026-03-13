@@ -1,0 +1,67 @@
+<div class="content-management-page">
+  <h1>Content Management</h1>
+
+  <mat-card class="section-card">
+    <mat-card-header>
+      <mat-card-title>Next Meetup Date</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="meetup-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Date</mat-label>
+          <input matInput type="date" [formControl]="meetupDate" />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Time</mat-label>
+          <input matInput type="time" [formControl]="meetupTime" />
+        </mat-form-field>
+
+        <button
+          mat-flat-button
+          color="primary"
+          (click)="saveMeetupDate()"
+          [disabled]="savingMeetup()"
+        >
+          Save
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="section-card">
+    <mat-card-header>
+      <mat-card-title>Referral Sources</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="sources-list">
+        @for (source of referralSources(); track source) {
+          <mat-chip-row (removed)="removeSource(source)">
+            {{ source }}
+            <button matChipRemove aria-label="Remove">
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip-row>
+        }
+      </div>
+
+      <div class="add-source-form">
+        <mat-form-field appearance="outline">
+          <mat-label>New Source</mat-label>
+          <input matInput [formControl]="newSource" (keyup.enter)="addSource()" />
+        </mat-form-field>
+        <button mat-stroked-button (click)="addSource()">Add</button>
+      </div>
+
+      <button
+        mat-flat-button
+        color="primary"
+        (click)="saveReferralSources()"
+        [disabled]="savingSources()"
+        class="save-sources-btn"
+      >
+        Save
+      </button>
+    </mat-card-content>
+  </mat-card>
+</div>

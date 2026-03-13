@@ -1,0 +1,64 @@
+.content-management-page {
+  padding: 32px;
+
+  @media (max-width: 1023px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 16px;
+  }
+
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 24px 0;
+
+    @media (max-width: 1023px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 22px;
+    }
+  }
+}
+
+.section-card {
+  margin-bottom: 24px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+
+.meetup-form {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sources-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.add-source-form {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.save-sources-btn {
+  margin-top: 16px;
+}

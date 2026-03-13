@@ -26,6 +26,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Repositories
 builder.Services.AddScoped<IMemberRepository, MemberRepository>();
+builder.Services.AddScoped<IContentRepository, ContentRepository>();
 
 // Email Service
 var useDevelopmentMode = builder.Configuration.GetValue<bool>("Email:UseDevelopmentMode");
@@ -43,7 +44,7 @@ builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 // CORS
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
-    ?? ["http://localhost:4200"];
+    ?? ["http://localhost:4200", "http://localhost:4201"];
 
 builder.Services.AddCors(options =>
 {
@@ -74,11 +75,50 @@ app.UseSwaggerUI();
 
 app.UseCors();
 
-// Ensure database is created
+// Ensure database is created and seed default content
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    await db.Database.EnsureCreatedAsync();
+    // Create missing tables for PostgreSQL (EnsureCreated won't add tables to existing DB)
+    if (dbProvider.Equals("PostgreSQL", StringComparison.OrdinalIgnoreCase))
+    {
+        await db.Database.ExecuteSqlRawAsync("""
+            CREATE TABLE IF NOT EXISTS "SiteContents" (
+                "Id" uuid NOT NULL PRIMARY KEY,
+                "Key" character varying(100) NOT NULL,
+                "Value" character varying(4000) NOT NULL
+            );
+            CREATE UNIQUE INDEX IF NOT EXISTS "IX_SiteContents_Key" ON "SiteContents" ("Key");
+        """);
+    }
+    else
+    {
+        await db.Database.EnsureCreatedAsync();
+    }
+
+    var contentRepo = scope.ServiceProvider.GetRequiredService<IContentRepository>();
+
+    // Seed default referral sources if not already present
+    var existingSources = await contentRepo.GetReferralSourcesAsync();
+    if (existingSources.Length == 0)
+    {
+        await contentRepo.SetReferralSourcesAsync([
+            "LinkedIn",
+            "Twitter/X",
+            "A friend or colleague",
+            "CSA/DND event",
+            "Google search",
+            "Other"
+        ]);
+    }
+
+    // Seed default meetup date if not already present
+    var existingMeetup = await contentRepo.GetNextMeetupDateAsync();
+    if (existingMeetup is null)
+    {
+        var defaultMeetup = app.Configuration["Community:NextMeetupDate"] ?? "2026-04-15T18:00:00Z";
+        await contentRepo.SetNextMeetupDateAsync(defaultMeetup);
+    }
 }
 
 // Health check endpoint

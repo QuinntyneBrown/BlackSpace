@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, computed } from '@angular/core';
 
 @Component({
   selector: 'lib-section-header',
@@ -10,4 +10,6 @@ export class SectionHeaderComponent {
   headline = input.required<string>();
   subtext = input<string>('');
   headlineSize = input<string>('40px');
+
+  formattedHeadline = computed(() => this.headline().replace(/\\n|\n/g, '<br>'));
 }

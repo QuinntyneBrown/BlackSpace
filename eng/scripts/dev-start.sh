@@ -33,7 +33,7 @@ cleanup_on_error() {
 trap cleanup_on_error ERR
 
 # ── Guard: already running? ──────────────────────────────────────────────────
-if [ -f "$PID_DIR/backend.pid" ] || [ -f "$PID_DIR/frontend.pid" ]; then
+if [ -f "$PID_DIR/backend.pid" ] || [ -f "$PID_DIR/frontend.pid" ] || [ -f "$PID_DIR/admin-frontend.pid" ]; then
   echo "Dev environment appears to be running already."
   echo "Run 'eng/scripts/dev-stop.sh' first, or delete .dev/*.pid to force."
   exit 1
@@ -49,7 +49,7 @@ echo "── START $(date '+%Y-%m-%d %H:%M:%S') ──" >> "$METRICS_FILE"
 
 # ── 1. Database (Docker) ────────────────────────────────────────────────────
 echo ""
-echo "[1/3] Starting PostgreSQL..."
+echo "[1/4] Starting PostgreSQL..."
 STEP_START=$(now_ms)
 
 ensure_docker_ready
@@ -59,7 +59,7 @@ log_metric "PostgreSQL (docker)" "$(elapsed $STEP_START)"
 
 # ── 2. Backend (.NET API) ───────────────────────────────────────────────────
 echo ""
-echo "[2/3] Starting .NET API (http://localhost:5000)..."
+echo "[2/4] Starting .NET API (http://localhost:5000)..."
 STEP_START=$(now_ms)
 
 cd "$REPO_ROOT/src/BlackSpace.Api"
@@ -82,7 +82,7 @@ log_metric ".NET API" "$(elapsed $STEP_START)"
 
 # ── 3. Frontend (Angular) ──────────────────────────────────────────────────
 echo ""
-echo "[3/3] Starting Angular (http://localhost:4200)..."
+echo "[3/4] Starting Angular (http://localhost:4200)..."
 STEP_START=$(now_ms)
 
 cd "$REPO_ROOT/src/BlackSpace.Web"
@@ -103,6 +103,29 @@ done
 
 log_metric "Angular SPA" "$(elapsed $STEP_START)"
 
+# ── 4. Admin Frontend (Angular) ──────────────────────────────────────────
+echo ""
+echo "[4/4] Starting Admin Angular (http://localhost:4201)..."
+STEP_START=$(now_ms)
+
+cd "$REPO_ROOT/src/BlackSpace.Web"
+"$NPX_BIN" ng serve blackspace-admin --port 4201 > "$LOG_DIR/admin-frontend.log" 2>&1 &
+ADMIN_FRONTEND_PID=$!
+echo "$ADMIN_FRONTEND_PID" > "$PID_DIR/admin-frontend.pid"
+
+# Wait for Angular admin dev server to respond
+RETRIES=0
+until probe_http_ready "http://localhost:4201"; do
+  RETRIES=$((RETRIES + 1))
+  if [ $RETRIES -ge 120 ]; then
+    echo "  Admin frontend failed to start within 120s. Check $LOG_DIR/admin-frontend.log"
+    cleanup_on_error
+  fi
+  sleep 1
+done
+
+log_metric "Angular Admin" "$(elapsed $STEP_START)"
+
 # ── Summary ─────────────────────────────────────────────────────────────────
 TOTAL_MS=$(elapsed $TOTAL_START)
 echo ""
@@ -113,6 +136,7 @@ echo ""
 echo "  API:      http://localhost:5000"
 echo "  Swagger:  http://localhost:5000/swagger"
 echo "  Frontend: http://localhost:4200"
+echo "  Admin:    http://localhost:4201"
 echo "  Database: localhost:5432 (blackspace/blackspace_dev)"
 echo ""
 echo "  Logs:     $LOG_DIR/"

@@ -17,8 +17,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: radial-gradient(ellipse at center top 40%, #0D1B3E 0%, #07080F 70%);
-  padding: 120px 1.5rem 120px;
+  background: radial-gradient(ellipse 120% 120% at center 40%, #0D1B3E 0%, #07080F 100%);
+  padding: 120px 200px;
 }
 .hero-content {
   max-width: 800px;
@@ -196,10 +196,12 @@
 }
 .founder-title {
   font-size: 15px;
+  font-weight: 500;
   color: #4F9CF7;
   margin: 0 0 1rem;
 }
 .founder-bio {
+  font-size: 15px;
   color: #8A8A9A;
   line-height: 1.6;
   margin: 0 0 1rem;
@@ -235,7 +237,7 @@
   font-family: 'Sora', sans-serif;
   font-weight: 700;
   font-size: 0.875rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 2px;
 }
 .footer-links {
   display: flex;
@@ -272,6 +274,9 @@
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    padding: 80px 48px;
+  }
   .hero-headline {
     font-size: 44px;
   }
@@ -284,6 +289,9 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 64px 24px;
+  }
   .hero-headline {
     font-size: 32px;
   }
@@ -292,7 +300,12 @@
     width: 100%;
   }
   .hero-actions > * {
+    display: block;
     width: 100%;
+  }
+  .hero-actions > * ::ng-deep button {
+    width: 100%;
+    justify-content: center;
   }
   .audience-grid {
     grid-template-columns: 1fr;

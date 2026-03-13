@@ -1,0 +1,19 @@
+<div class="member-list-page">
+  <div class="page-header">
+    <h1>Members</h1>
+    <lib-admin-search-bar
+      placeholder="Search members..."
+      (searchChange)="onSearchChange($event)"
+    />
+  </div>
+
+  <lib-admin-data-table
+    [columns]="columns"
+    [data]="members()"
+    [totalCount]="totalCount()"
+    [loading]="loading()"
+    (sortChange)="onSortChange($event)"
+    (pageChange)="onPageChange($event)"
+    (rowAction)="onRowAction($event)"
+  />
+</div>

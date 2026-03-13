@@ -1,0 +1,55 @@
+<div class="admin-dashboard-page">
+  <h1>Dashboard</h1>
+
+  <div class="stat-cards">
+    <lib-admin-stat-card
+      icon="people"
+      label="Total Members"
+      [value]="totalMembers()"
+      color="primary"
+    />
+    <lib-admin-stat-card
+      icon="person_add"
+      label="New This Month"
+      [value]="newThisMonth()"
+      color="accent"
+    />
+    <lib-admin-stat-card
+      icon="event"
+      label="Next Meetup Date"
+      [value]="nextMeetupDate()"
+      color="primary"
+    />
+    <lib-admin-stat-card
+      icon="source"
+      label="Active Referral Sources"
+      [value]="activeReferralSources()"
+      color="accent"
+    />
+  </div>
+
+  <div class="recent-section">
+    <h2>Recent Members</h2>
+    <lib-admin-data-table
+      [columns]="recentColumns"
+      [data]="recentMembers()"
+      [totalCount]="recentMembersTotal()"
+      [loading]="loadingRecent()"
+      [pageSizeOptions]="[5]"
+    />
+  </div>
+
+  <div class="quick-actions">
+    <h2>Quick Actions</h2>
+    <div class="action-buttons">
+      <button mat-flat-button color="primary" (click)="openAddMember()">
+        <mat-icon>person_add</mat-icon>
+        Add Member
+      </button>
+      <button mat-stroked-button color="primary" (click)="navigateToContent()">
+        <mat-icon>event</mat-icon>
+        Edit Meetup Date
+      </button>
+    </div>
+  </div>
+</div>

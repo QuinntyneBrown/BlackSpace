@@ -1,0 +1,148 @@
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e5]:
+      - link "BLACK SPACE CANADA" [ref=e6] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e7]:
+        - link "About" [ref=e8] [cursor=pointer]:
+          - /url: "#about"
+        - link "Who It's For" [ref=e9] [cursor=pointer]:
+          - /url: "#who-its-for"
+        - link "What We Do" [ref=e10] [cursor=pointer]:
+          - /url: "#what-we-do"
+        - link "Founder" [ref=e11] [cursor=pointer]:
+          - /url: "#founder"
+        - button "Join" [ref=e13] [cursor=pointer]
+  - generic [ref=e15]:
+    - generic [ref=e16]: Building Canada's Space Future
+    - heading "Black Canadians in Space & Defence" [level=1] [ref=e18]:
+      - text: Black Canadians in
+      - text: Space & Defence
+    - paragraph [ref=e19]: Connecting, elevating, and growing the community of Black Canadian engineers, scientists, and technologists in space and defence.
+    - generic [ref=e20]:
+      - button "Join the Community" [ref=e22] [cursor=pointer]
+      - button "Learn More" [ref=e24] [cursor=pointer]
+  - generic [ref=e26]:
+    - generic [ref=e28]:
+      - generic [ref=e29]: WHY THIS EXISTS
+      - heading "The talent is here.\\nThe network wasn't." [level=2] [ref=e30]
+    - generic [ref=e31]:
+      - paragraph [ref=e32]: Canada's space sector is growing fast — from satellite communications to lunar exploration to continental defence. But Black Canadians remain significantly underrepresented in these industries.
+      - paragraph [ref=e33]: Not because of a lack of talent. Because of a lack of networks, visibility, and structured pathways into the sector.
+      - generic [ref=e34]:
+        - generic [ref=e35]: "0"
+        - generic [ref=e36]: The number of dedicated professional networks for Black Canadians in the space and defence sector.
+      - paragraph [ref=e37]: We're building the network that connects Black Canadian professionals in space and defence — creating visibility for the talent that's already here and building the pipeline for those who are next.
+  - generic [ref=e39]:
+    - generic [ref=e41]:
+      - generic [ref=e42]: WHO IT'S FOR
+      - heading "Is this community for you?" [level=2] [ref=e43]
+    - generic [ref=e44]:
+      - generic "Software Engineers" [ref=e45]:
+        - generic [ref=e46]:
+          - img [ref=e48]
+          - heading "Software Engineers" [level=3] [ref=e50]
+          - paragraph [ref=e51]: Writing flight software, ground systems, C2 platforms, simulations
+      - generic "Hardware Engineers" [ref=e52]:
+        - generic [ref=e53]:
+          - img [ref=e55]
+          - heading "Hardware Engineers" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Designing circuits, testing components, building the physical tech that goes to space
+      - generic "Students & New Grads" [ref=e59]:
+        - generic [ref=e60]:
+          - img [ref=e62]
+          - heading "Students & New Grads" [level=3] [ref=e64]
+          - paragraph [ref=e65]: Studying STEM and looking for mentors, internships, and a path into the sector
+      - generic "Entrepreneurs" [ref=e66]:
+        - generic [ref=e67]:
+          - img [ref=e69]
+          - heading "Entrepreneurs" [level=3] [ref=e71]
+          - paragraph [ref=e72]: Building startups and ventures in space tech, defence tech, or dual-use industries
+      - generic "Scientists & Researchers" [ref=e73]:
+        - generic [ref=e74]:
+          - img [ref=e76]
+          - heading "Scientists & Researchers" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Conducting research in astrophysics, remote sensing, materials science, propulsion
+  - generic [ref=e81]:
+    - generic [ref=e83]:
+      - generic [ref=e84]: WHAT WE DO
+      - heading "What we actually do." [level=2] [ref=e85]
+    - generic [ref=e86]:
+      - generic "Networking" [ref=e87]:
+        - generic [ref=e88]:
+          - img [ref=e91]
+          - heading "Networking" [level=3] [ref=e93]
+          - paragraph [ref=e94]: We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector.
+      - generic "Visibility" [ref=e95]:
+        - generic [ref=e96]:
+          - img [ref=e99]
+          - heading "Visibility" [level=3] [ref=e101]
+          - paragraph [ref=e102]: We spotlight the work Black Canadians are already doing in space and defence — through stories, events, and public advocacy.
+      - generic "Pipeline" [ref=e103]:
+        - generic [ref=e104]:
+          - img [ref=e107]
+          - heading "Pipeline" [level=3] [ref=e109]
+          - paragraph [ref=e110]: We create pathways for the next generation to enter and thrive in the space and defence sector — mentorship, internships, and career support.
+  - generic [ref=e112]:
+    - generic [ref=e114]:
+      - generic [ref=e115]: JOIN US
+      - heading "Join Black Space Canada" [level=2] [ref=e116]
+    - generic [ref=e119]:
+      - generic [ref=e120]:
+        - generic [ref=e121]: Full Name *
+        - textbox "Enter your full name" [ref=e122]
+      - generic [ref=e123]:
+        - generic [ref=e124]: Email *
+        - textbox "Enter your email" [ref=e125]
+      - generic [ref=e126]:
+        - generic [ref=e127]: Current Role / Title
+        - textbox "Enter your role or title" [ref=e128]
+      - generic [ref=e129]:
+        - generic [ref=e130]: Organization
+        - textbox "Enter your organization" [ref=e131]
+      - generic [ref=e132]:
+        - generic [ref=e133]: How did you hear about us?
+        - combobox [ref=e134] [cursor=pointer]:
+          - option "Select an option" [disabled] [selected]
+          - option "LinkedIn"
+          - option "Twitter/X"
+          - option "A friend or colleague"
+          - option "CSA/DND event"
+          - option "Google search"
+          - option "Other"
+      - paragraph [ref=e135]: We'll never spam you. Just community updates and opportunities.
+      - button "Join the Community" [disabled] [ref=e137]
+  - generic [ref=e140]:
+    - img "Quinn Brown" [ref=e141]
+    - generic [ref=e142]:
+      - heading "Quinn Brown" [level=3] [ref=e143]
+      - paragraph [ref=e144]: Senior .NET Consultant & Software Quality Lead, MDA Space
+      - paragraph [ref=e145]: Currently building software for Canadarm3 on NASA's Lunar Gateway program. Started Black Space Canada because this community should have existed years ago.
+      - link "Connect on LinkedIn" [ref=e146] [cursor=pointer]:
+        - /url: https://linkedin.com
+        - img [ref=e148]
+        - generic [ref=e150]: Connect on LinkedIn
+  - contentinfo [ref=e151]:
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]: BLACK SPACE CANADA
+        - generic [ref=e155]:
+          - link "About" [ref=e156] [cursor=pointer]:
+            - /url: "#about"
+          - link "Who It's For" [ref=e157] [cursor=pointer]:
+            - /url: "#who-its-for"
+          - link "What We Do" [ref=e158] [cursor=pointer]:
+            - /url: "#what-we-do"
+          - link "Contact" [ref=e159] [cursor=pointer]:
+            - /url: mailto:hello@blackspace.ca
+        - link "LinkedIn" [ref=e160] [cursor=pointer]:
+          - /url: https://linkedin.com
+          - img [ref=e162]
+      - generic [ref=e164]:
+        - paragraph [ref=e165]: Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.
+        - paragraph [ref=e166]: © 2026 Black Space Canada. All rights reserved.
+  - generic [ref=e169]:
+    - paragraph [ref=e170]: We use cookies to improve your experience. By continuing to use this site, you agree to our use of cookies.
+    - generic [ref=e171]:
+      - button "Accept" [ref=e173] [cursor=pointer]
+      - button "Learn More" [ref=e175] [cursor=pointer]

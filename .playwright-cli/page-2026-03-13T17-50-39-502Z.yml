@@ -1,0 +1,81 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - button "Toggle menu" [ref=e6] [cursor=pointer]:
+      - img [ref=e7]: menu
+    - generic [ref=e10]: Black Space Admin
+  - generic [ref=e11]:
+    - navigation [ref=e15]:
+      - link "Dashboard" [ref=e16] [cursor=pointer]:
+        - /url: /admin/dashboard
+        - img [ref=e17]: dashboard
+        - generic [ref=e18]: Dashboard
+      - link "Members" [ref=e19] [cursor=pointer]:
+        - /url: /admin/members
+        - img [ref=e20]: people
+        - generic [ref=e21]: Members
+      - link "Content" [ref=e22] [cursor=pointer]:
+        - /url: /admin/content
+        - img [ref=e23]: settings
+        - generic [ref=e24]: Content
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - heading "Members" [level=1] [ref=e30]
+        - generic [ref=e34]:
+          - img [ref=e36]: search
+          - textbox "Search members..." [ref=e38]
+      - generic [ref=e41]:
+        - table [ref=e42]:
+          - rowgroup [ref=e43]:
+            - row "Name Email Role Organization Source Joined Actions" [ref=e44]:
+              - columnheader "Name" [ref=e45] [cursor=pointer]:
+                - button "Name" [ref=e46]:
+                  - generic [ref=e47]: Name
+                  - img [ref=e49]
+              - columnheader "Email" [ref=e51] [cursor=pointer]:
+                - button "Email" [ref=e52]:
+                  - generic [ref=e53]: Email
+                  - img [ref=e55]
+              - columnheader "Role" [ref=e57]:
+                - generic [ref=e59]: Role
+              - columnheader "Organization" [ref=e60] [cursor=pointer]:
+                - button "Organization" [ref=e61]:
+                  - generic [ref=e62]: Organization
+                  - img [ref=e64]
+              - columnheader "Source" [ref=e66]:
+                - generic [ref=e68]: Source
+              - columnheader "Joined" [ref=e69] [cursor=pointer]:
+                - button "Joined" [ref=e70]:
+                  - generic [ref=e71]: Joined
+                  - img [ref=e73]
+              - columnheader "Actions" [ref=e75]
+          - rowgroup [ref=e76]:
+            - row "Quinntyne quinntyne@hotmail.com 2026-03-13T16:41:31.109815Z Edit Delete" [ref=e77]:
+              - cell "Quinntyne" [ref=e78]
+              - cell "quinntyne@hotmail.com" [ref=e79]
+              - cell [ref=e80]
+              - cell [ref=e81]
+              - cell [ref=e82]
+              - cell "2026-03-13T16:41:31.109815Z" [ref=e83]
+              - cell "Edit Delete" [ref=e84]:
+                - button "Edit" [ref=e85] [cursor=pointer]:
+                  - img [ref=e86]: edit
+                - button "Delete" [ref=e89] [cursor=pointer]:
+                  - img [ref=e90]: delete
+        - group [ref=e93]:
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - generic [ref=e97]: "Items per page:"
+              - combobox "Items per page:" [ref=e102] [cursor=pointer]:
+                - generic [ref=e103]:
+                  - generic [ref=e105]: "5"
+                  - img [ref=e108]
+            - generic [ref=e111]:
+              - status [ref=e112]: 1 – 1 of 1
+              - button "First page" [disabled] [ref=e113]:
+                - img [ref=e114]
+              - button "Previous page" [disabled] [ref=e118]:
+                - img [ref=e119]
+              - button "Next page" [disabled] [ref=e123]:
+                - img [ref=e124]
+              - button "Last page" [disabled] [ref=e128]:
+                - img [ref=e129]

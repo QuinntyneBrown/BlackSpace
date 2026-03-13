@@ -1,0 +1,55 @@
+<h2 mat-dialog-title>{{ title }}</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" class="form-fields">
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Full Name</mat-label>
+      <input matInput formControlName="fullName" />
+      @if (form.controls.fullName.hasError('required') && form.controls.fullName.touched) {
+        <mat-error>Full Name is required</mat-error>
+      }
+      @if (fieldError('fullName')) {
+        <mat-hint class="field-error">{{ fieldError('fullName') }}</mat-hint>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email" />
+      @if (form.controls.email.hasError('required') && form.controls.email.touched) {
+        <mat-error>Email is required</mat-error>
+      }
+      @if (form.controls.email.hasError('email') && form.controls.email.touched) {
+        <mat-error>Invalid email format</mat-error>
+      }
+      @if (fieldError('email')) {
+        <mat-hint class="field-error">{{ fieldError('email') }}</mat-hint>
+      }
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Role/Title</mat-label>
+      <input matInput formControlName="roleTitle" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Organization</mat-label>
+      <input matInput formControlName="organization" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Referral Source</mat-label>
+      <mat-select formControlName="referralSource">
+        <mat-option value="">None</mat-option>
+        @for (source of referralSources(); track source) {
+          <mat-option [value]="source">{{ source }}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-flat-button color="primary" (click)="onSave()" [disabled]="saving()">Save</button>
+</mat-dialog-actions>

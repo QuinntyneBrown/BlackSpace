@@ -1,0 +1,89 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - button "Toggle menu" [ref=e6] [cursor=pointer]:
+      - img [ref=e7]: menu
+    - generic [ref=e10]: Black Space Admin
+  - generic [ref=e11]:
+    - navigation [ref=e15]:
+      - link "Dashboard" [ref=e16] [cursor=pointer]:
+        - /url: /admin/dashboard
+        - img [ref=e17]: dashboard
+        - generic [ref=e18]: Dashboard
+      - link "Members" [ref=e19] [cursor=pointer]:
+        - /url: /admin/members
+        - img [ref=e20]: people
+        - generic [ref=e21]: Members
+      - link "Content" [ref=e22] [cursor=pointer]:
+        - /url: /admin/content
+        - img [ref=e23]: settings
+        - generic [ref=e24]: Content
+    - generic [ref=e28]:
+      - heading "Dashboard" [level=1] [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e33]:
+          - img [ref=e35]: people
+          - generic [ref=e36]:
+            - generic [ref=e37]: Total Members
+            - generic [ref=e38]: "1"
+        - generic [ref=e41]:
+          - img [ref=e43]: person_add
+          - generic [ref=e44]:
+            - generic [ref=e45]: New This Month
+            - generic [ref=e46]: "1"
+        - generic [ref=e49]:
+          - img [ref=e51]: event
+          - generic [ref=e52]:
+            - generic [ref=e53]: Next Meetup Date
+            - generic [ref=e54]: 4/15/2026
+        - generic [ref=e57]:
+          - img [ref=e59]: source
+          - generic [ref=e60]:
+            - generic [ref=e61]: Active Referral Sources
+            - generic [ref=e62]: "6"
+      - generic [ref=e63]:
+        - heading "Recent Members" [level=2] [ref=e64]
+        - generic [ref=e66]:
+          - table [ref=e67]:
+            - rowgroup [ref=e68]:
+              - row "Name Email Joined Actions" [ref=e69]:
+                - columnheader "Name" [ref=e70]:
+                  - generic [ref=e72]: Name
+                - columnheader "Email" [ref=e73]:
+                  - generic [ref=e75]: Email
+                - columnheader "Joined" [ref=e76]:
+                  - generic [ref=e78]: Joined
+                - columnheader "Actions" [ref=e79]
+            - rowgroup [ref=e80]:
+              - row "Quinntyne quinntyne@hotmail.com 2026-03-13T16:41:31.109815Z Edit Delete" [ref=e81]:
+                - cell "Quinntyne" [ref=e82]
+                - cell "quinntyne@hotmail.com" [ref=e83]
+                - cell "2026-03-13T16:41:31.109815Z" [ref=e84]
+                - cell "Edit Delete" [ref=e85]:
+                  - button "Edit" [ref=e86] [cursor=pointer]:
+                    - img [ref=e87]: edit
+                  - button "Delete" [ref=e90] [cursor=pointer]:
+                    - img [ref=e91]: delete
+          - group [ref=e94]:
+            - generic [ref=e96]:
+              - generic [ref=e97]:
+                - generic [ref=e98]: "Items per page:"
+                - generic [ref=e99]: "5"
+              - generic [ref=e100]:
+                - status [ref=e101]: 1 – 1 of 1
+                - button "First page" [disabled] [ref=e102]:
+                  - img [ref=e103]
+                - button "Previous page" [disabled] [ref=e107]:
+                  - img [ref=e108]
+                - button "Next page" [disabled] [ref=e112]:
+                  - img [ref=e113]
+                - button "Last page" [disabled] [ref=e117]:
+                  - img [ref=e118]
+      - generic [ref=e122]:
+        - heading "Quick Actions" [level=2] [ref=e123]
+        - generic [ref=e124]:
+          - button "Add Member" [ref=e125]:
+            - img [ref=e126]: person_add
+            - generic [ref=e127]: Add Member
+          - button "Edit Meetup Date" [ref=e130]:
+            - img [ref=e131]: event
+            - generic [ref=e132]: Edit Meetup Date

@@ -1,0 +1,81 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - button "Toggle menu" [ref=e6] [cursor=pointer]:
+      - img [ref=e7]: menu
+    - generic [ref=e10]: Black Space Admin
+  - generic [ref=e11]:
+    - navigation [ref=e15]:
+      - link "Dashboard" [ref=e16] [cursor=pointer]:
+        - /url: /admin/dashboard
+        - img [ref=e17]: dashboard
+        - generic [ref=e18]: Dashboard
+      - link "Members" [ref=e19] [cursor=pointer]:
+        - /url: /admin/members
+        - img [ref=e20]: group
+        - generic [ref=e21]: Members
+      - link "Content" [ref=e22] [cursor=pointer]:
+        - /url: /admin/content
+        - img [ref=e23]: article
+        - generic [ref=e24]: Content
+    - generic [ref=e28]:
+      - heading "Dashboard" [level=1] [ref=e29]
+      - generic [ref=e30]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: Total Members
+          - generic [ref=e36]: "1"
+        - generic [ref=e40]:
+          - generic [ref=e41]: New This Month
+          - generic [ref=e42]: "1"
+        - generic [ref=e46]:
+          - generic [ref=e47]: Next Meetup Date
+          - generic [ref=e48]: 4/15/2026
+        - generic [ref=e52]:
+          - generic [ref=e53]: Active Referral Sources
+          - generic [ref=e54]: "6"
+      - generic [ref=e55]:
+        - heading "Recent Members" [level=2] [ref=e56]
+        - generic [ref=e58]:
+          - table [ref=e59]:
+            - rowgroup [ref=e60]:
+              - row "Name Email Joined Actions" [ref=e61]:
+                - columnheader "Name" [ref=e62]:
+                  - generic [ref=e64]: Name
+                - columnheader "Email" [ref=e65]:
+                  - generic [ref=e67]: Email
+                - columnheader "Joined" [ref=e68]:
+                  - generic [ref=e70]: Joined
+                - columnheader "Actions" [ref=e71]
+            - rowgroup [ref=e72]:
+              - row "Quinntyne quinntyne@hotmail.com 2026-03-13T16:41:31.109815Z Edit Delete" [ref=e73]:
+                - cell "Quinntyne" [ref=e74]
+                - cell "quinntyne@hotmail.com" [ref=e75]
+                - cell "2026-03-13T16:41:31.109815Z" [ref=e76]
+                - cell "Edit Delete" [ref=e77]:
+                  - button "Edit" [ref=e78] [cursor=pointer]:
+                    - img [ref=e79]: edit
+                  - button "Delete" [ref=e82] [cursor=pointer]:
+                    - img [ref=e83]: delete
+          - group [ref=e86]:
+            - generic [ref=e88]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: "Items per page:"
+                - generic [ref=e91]: "5"
+              - generic [ref=e92]:
+                - status [ref=e93]: 1 – 1 of 1
+                - button "First page" [disabled] [ref=e94]:
+                  - img [ref=e95]
+                - button "Previous page" [disabled] [ref=e99]:
+                  - img [ref=e100]
+                - button "Next page" [disabled] [ref=e104]:
+                  - img [ref=e105]
+                - button "Last page" [disabled] [ref=e109]:
+                  - img [ref=e110]
+      - generic [ref=e114]:
+        - heading "Quick Actions" [level=2] [ref=e115]
+        - generic [ref=e116]:
+          - button "Add Member" [ref=e117]:
+            - img [ref=e118]: person_add
+            - generic [ref=e119]: Add Member
+          - button "Edit Meetup Date" [ref=e122]:
+            - img [ref=e123]: event
+            - generic [ref=e124]: Edit Meetup Date

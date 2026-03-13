@@ -1,6 +1,6 @@
 <div class="section-header">
   <span class="label">{{ label() }}</span>
-  <h2 class="headline" [style.font-size]="headlineSize()">{{ headline() }}</h2>
+  <h2 class="headline" [style.font-size]="headlineSize()" [innerHTML]="formattedHeadline()"></h2>
   @if (subtext()) {
     <p class="subtext">{{ subtext() }}</p>
   }
