@@ -42,6 +42,11 @@ public class MemberRepository : IMemberRepository
     public async Task<bool> ExistsAsync(string email, CancellationToken cancellationToken = default)
     {
         return await _context.Members
-            .AnyAsync(m => m.Email == email, cancellationToken);
+            .AnyAsync(m => m.Email.ToLower() == email.ToLower(), cancellationToken);
+    }
+
+    public async Task<int> GetCountAsync(CancellationToken cancellationToken = default)
+    {
+        return await _context.Members.CountAsync(cancellationToken);
     }
 }

@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="BlackSpace.Api/BlackSpace.Api.csproj" />
-  <Project Path="BlackSpace.Domain/BlackSpace.Domain.csproj" />
-  <Project Path="BlackSpace.Infrastructure/BlackSpace.Infrastructure.csproj" />
-  <Project Path="BlackSpace.Tests/BlackSpace.Tests.csproj" />
-</Solution>

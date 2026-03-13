@@ -4,6 +4,7 @@ using BlackSpace.Domain.Interfaces;
 using BlackSpace.Infrastructure.Data;
 using BlackSpace.Infrastructure.Repositories;
 using BlackSpace.Infrastructure.Services;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -30,6 +31,9 @@ else
 {
     builder.Services.AddScoped<IEmailService, SmtpEmailService>();
 }
+
+// FluentValidation
+builder.Services.AddValidatorsFromAssemblyContaining<Program>();
 
 // CORS
 var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>()
@@ -58,11 +62,8 @@ var app = builder.Build();
 // Configure middleware pipeline
 app.UseSerilogRequestLogging();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors();
 
@@ -74,21 +75,46 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Health check endpoint
-app.MapHealthChecks("/health");
+app.MapHealthChecks("/api/health");
 
 // Minimal API endpoints
 var api = app.MapGroup("/api");
 
-api.MapPost("/members", async (CreateMemberRequest request, IMemberRepository repository, IEmailService emailService, HttpContext httpContext, CancellationToken cancellationToken) =>
+api.MapPost("/members", async (
+    CreateMemberRequest request,
+    IValidator<CreateMemberRequest> validator,
+    IMemberRepository repository,
+    IEmailService emailService,
+    ILogger<Program> logger,
+    HttpContext httpContext,
+    CancellationToken cancellationToken) =>
 {
-    if (string.IsNullOrWhiteSpace(request.FullName) || string.IsNullOrWhiteSpace(request.Email))
+    // Validate with FluentValidation
+    var validationResult = await validator.ValidateAsync(request, cancellationToken);
+    if (!validationResult.IsValid)
     {
-        return Results.BadRequest(new { error = "FullName and Email are required." });
+        var errors = validationResult.Errors
+            .GroupBy(e => char.ToLowerInvariant(e.PropertyName[0]) + e.PropertyName[1..])
+            .ToDictionary(
+                g => g.Key,
+                g => g.Select(e => e.ErrorMessage).ToArray());
+
+        return Results.Json(new
+        {
+            error = "validation_failed",
+            message = "Please fix the errors below.",
+            errors
+        }, statusCode: 422);
     }
 
-    if (await repository.ExistsAsync(request.Email, cancellationToken))
+    // Check duplicate email (case-insensitive)
+    if (await repository.ExistsAsync(request.Email.Trim(), cancellationToken))
     {
-        return Results.Conflict(new { error = "A member with this email already exists." });
+        return Results.Json(new
+        {
+            error = "already_registered",
+            message = "This email is already part of the community."
+        }, statusCode: 409);
     }
 
     var member = new Member
@@ -104,7 +130,21 @@ api.MapPost("/members", async (CreateMemberRequest request, IMemberRepository re
     };
 
     await repository.AddAsync(member, cancellationToken);
-    await emailService.SendWelcomeEmailAsync(member.Email, member.FullName, cancellationToken);
+
+    // Fire-and-forget email - member creation succeeds even if email fails
+    var memberEmail = member.Email;
+    var memberName = member.FullName;
+    _ = Task.Run(async () =>
+    {
+        try
+        {
+            await emailService.SendWelcomeEmailAsync(memberEmail, memberName);
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Failed to send welcome email to {Email}", memberEmail);
+        }
+    });
 
     var response = new MemberResponse(
         member.Id,
@@ -119,8 +159,8 @@ api.MapPost("/members", async (CreateMemberRequest request, IMemberRepository re
 .WithName("CreateMember")
 .WithOpenApi()
 .Produces<MemberResponse>(StatusCodes.Status201Created)
-.ProducesProblem(StatusCodes.Status400BadRequest)
-.ProducesProblem(StatusCodes.Status409Conflict);
+.Produces(StatusCodes.Status422UnprocessableEntity)
+.Produces(StatusCodes.Status409Conflict);
 
 api.MapGet("/members/{id:guid}", async (Guid id, IMemberRepository repository, CancellationToken cancellationToken) =>
 {
@@ -145,15 +185,33 @@ api.MapGet("/members/{id:guid}", async (Guid id, IMemberRepository repository, C
 .Produces<MemberResponse>()
 .ProducesProblem(StatusCodes.Status404NotFound);
 
-api.MapGet("/community", (IConfiguration configuration) =>
+api.MapGet("/content/stats", async (IMemberRepository repository, IConfiguration configuration, CancellationToken cancellationToken) =>
 {
+    var memberCount = await repository.GetCountAsync(cancellationToken);
+    var nextMeetupDateStr = configuration["Community:NextMeetupDate"];
+
     return Results.Ok(new
     {
-        LinkedInGroupUrl = configuration["Community:LinkedInGroupUrl"],
-        NextMeetupDate = configuration["Community:NextMeetupDate"]
+        memberCount,
+        nextMeetupDate = nextMeetupDateStr
     });
 })
-.WithName("GetCommunityInfo")
+.WithName("GetContentStats")
+.WithOpenApi();
+
+api.MapGet("/content/referral-sources", () =>
+{
+    return Results.Ok(new[]
+    {
+        "LinkedIn",
+        "Twitter/X",
+        "A friend or colleague",
+        "CSA/DND event",
+        "Google search",
+        "Other"
+    });
+})
+.WithName("GetReferralSources")
 .WithOpenApi();
 
 await app.RunAsync();

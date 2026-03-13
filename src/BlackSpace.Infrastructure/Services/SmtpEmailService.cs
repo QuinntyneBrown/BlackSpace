@@ -20,10 +20,23 @@ public class SmtpEmailService : IEmailService
     public async Task SendWelcomeEmailAsync(string toEmail, string toName, CancellationToken cancellationToken = default)
     {
         var subject = "Welcome to Black Canadians in Space & Defence!";
+        var linkedInGroupUrl = _configuration["Community:LinkedInGroupUrl"];
+        var nextMeetupDate = _configuration["Community:NextMeetupDate"];
+
+        var meetupSection = !string.IsNullOrEmpty(nextMeetupDate)
+            ? $"<p>Our next meetup is on <strong>{nextMeetupDate}</strong> — we'd love to see you there!</p>"
+            : "";
+
+        var linkedInSection = !string.IsNullOrEmpty(linkedInGroupUrl)
+            ? $"<p>Join our LinkedIn group to stay connected: <a href=\"{linkedInGroupUrl}\">{linkedInGroupUrl}</a></p>"
+            : "";
+
         var body = $"""
             <h1>Welcome, {toName}!</h1>
             <p>Thank you for joining the Black Canadians in Space & Defence community.</p>
             <p>We're excited to have you on board.</p>
+            {meetupSection}
+            {linkedInSection}
             """;
 
         await SendEmailAsync(toEmail, toName, subject, body, cancellationToken);

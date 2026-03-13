@@ -1,0 +1,1 @@
+Black Space Canada connects, elevates, and grows the community of Black Canadian engineers, scientists, and technologists in the space and defence sector. We build professional networks, create visibility for Black Canadians already doing the work, and open pathways for the next generation to enter and thrive in the industry.

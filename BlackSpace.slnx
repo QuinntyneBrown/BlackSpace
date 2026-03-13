@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/BlackSpace.Api/BlackSpace.Api.csproj" />
+    <Project Path="src/BlackSpace.Domain/BlackSpace.Domain.csproj" />
+    <Project Path="src/BlackSpace.Infrastructure/BlackSpace.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/BlackSpace.Tests/BlackSpace.Tests.csproj" />
+  </Folder>
+</Solution>
