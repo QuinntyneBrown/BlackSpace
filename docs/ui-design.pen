@@ -197,11 +197,12 @@
               "fill": "#8A8A9A",
               "textGrowth": "fixed-width",
               "width": 700,
-              "content": "A community for Black Canadian engineers, scientists, and technologists\nbuilding Canada's space and defence systems.",
+              "content": "Connecting, elevating, and growing the community of Black Canadian engineers,\nscientists, and technologists in space and defence.",
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 20
+              "fontSize": 20,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -292,11 +293,12 @@
                   "fill": "#8A8A9A",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Canada's space sector supports over 12,000 jobs and is growing fast. Canadarm3, Lunar Gateway, defence modernization, satellite programs — billions in investment are reshaping the industry.",
+                  "content": "Canada's space and defence sector supports over 12,000 jobs and is growing fast — Canadarm3, Lunar Gateway, defence modernization, satellite programs. Billions in investment are reshaping the industry.",
                   "lineHeight": 1.7,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 17
+                  "fontSize": 17,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -305,11 +307,12 @@
                   "fill": "#8A8A9A",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Yet Black Canadians remain underrepresented in these programs — especially on the engineering and technology side. Existing organizations serve adjacent communities, but nothing exists for Black Canadian engineers and technologists in space and defence specifically.",
+                  "content": "Black Canadians are already part of this work. But without dedicated networks, visibility remains low and pathways for the next generation stay narrow. No organization exists specifically for Black Canadian engineers and technologists in space and defence.",
                   "lineHeight": 1.7,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 17
+                  "fontSize": 17,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -361,7 +364,7 @@
               "fill": "#FFFFFF",
               "textGrowth": "fixed-width",
               "width": 600,
-              "content": "Many of us have been \"the only one in the room.\"\nThis community changes that.",
+              "content": "We're here to change that — by building the networks, the visibility, and the pipeline this community needs to thrive.",
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
@@ -549,7 +552,7 @@
               "id": "WZ1hA",
               "name": "whatHeadline",
               "fill": "#FFFFFF",
-              "content": "More than a logo and a mission statement.",
+              "content": "What we actually do.",
               "textAlign": "center",
               "fontFamily": "Sora",
               "fontSize": 40,
@@ -571,13 +574,13 @@
                   "name": "p1",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "users"
+                      "iconFontName": "network"
                     },
                     "NQWlj": {
-                      "content": "Connect"
+                      "content": "Networking"
                     },
                     "zMyh7": {
-                      "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work. Who are you, what are you working on, what do you need?"
+                      "content": "We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector. Quarterly meetups, direct introductions, and a growing community of peers."
                     }
                   }
                 },
@@ -589,13 +592,13 @@
                   "name": "p2",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "megaphone"
+                      "iconFontName": "eye"
                     },
                     "NQWlj": {
-                      "content": "Share"
+                      "content": "Visibility"
                     },
                     "zMyh7": {
-                      "content": "Weekly posts covering CSA contract announcements, DND procurement opportunities, job openings at MDA, Telesat, CAE, L3Harris, policy updates, scholarships, and internships."
+                      "content": "We create visibility for Black Canadians already doing the work — profiling engineers, scientists, and technologists at CSA, MDA, Telesat, CAE, L3Harris, DND, and beyond. The talent exists. We make sure it's seen."
                     }
                   }
                 },
@@ -607,13 +610,13 @@
                   "name": "p3",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "star"
+                      "iconFontName": "route"
                     },
                     "NQWlj": {
-                      "content": "Elevate"
+                      "content": "Pipeline"
                     },
                     "zMyh7": {
-                      "content": "Spotlights on Black Canadians already in the sector. Making visible the people and careers that the industry rarely highlights."
+                      "content": "We open pathways for the next generation to enter and thrive in the industry — connecting students to mentors, surfacing scholarships, internships, and procurement opportunities."
                     }
                   }
                 }
@@ -772,7 +775,8 @@
                   "lineHeight": 1.6,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -857,7 +861,8 @@
                   "content": "Currently building software for Canadarm3 on NASA's Lunar Gateway program. Started Black Space Canada because this community should have existed years ago.",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -945,7 +950,8 @@
                       "fill": "#8A8A9A",
                       "content": "hello@blackspace.ca",
                       "fontFamily": "Inter",
-                      "fontSize": 13
+                      "fontSize": 13,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -971,7 +977,8 @@
                           "fill": "#8A8A9A",
                           "content": "LinkedIn Group",
                           "fontFamily": "Inter",
-                          "fontSize": 13
+                          "fontSize": 13,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -989,7 +996,8 @@
               "content": "Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.",
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -998,7 +1006,8 @@
               "fill": "#3A3A4A",
               "content": "© 2026 Black Space Canada. All rights reserved.",
               "fontFamily": "Inter",
-              "fontSize": 12
+              "fontSize": 12,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -1188,11 +1197,12 @@
               "fill": "#8A8A9A",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "A community for Black Canadian engineers, scientists, and technologists building Canada's space and defence systems.",
+              "content": "Connecting, elevating, and growing the community of Black Canadian engineers, scientists, and technologists in space and defence.",
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 18
+              "fontSize": 18,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -1283,11 +1293,12 @@
                   "fill": "#8A8A9A",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Canada's space sector supports over 12,000 jobs and is growing fast. Canadarm3, Lunar Gateway, defence modernization, satellite programs — billions in investment are reshaping the industry.",
+                  "content": "Canada's space and defence sector supports over 12,000 jobs and is growing fast — Canadarm3, Lunar Gateway, defence modernization. Billions in investment are reshaping the industry.",
                   "lineHeight": 1.7,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "text",
@@ -1296,11 +1307,12 @@
                   "fill": "#8A8A9A",
                   "textGrowth": "fixed-width",
                   "width": "fill_container",
-                  "content": "Yet Black Canadians remain underrepresented in these programs — especially on the engineering and technology side.",
+                  "content": "Black Canadians are already part of this work. But without dedicated networks, visibility stays low and pathways for the next generation remain narrow.",
                   "lineHeight": 1.7,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 16
+                  "fontSize": 16,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -1352,7 +1364,7 @@
               "fill": "#FFFFFF",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "Many of us have been \"the only one in the room.\"\nThis community changes that.",
+              "content": "We're here to change that — by building the networks, the visibility, and the pipeline this community needs to thrive.",
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
@@ -1570,13 +1582,13 @@
                   "name": "tabWtP1",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "users"
+                      "iconFontName": "network"
                     },
                     "NQWlj": {
-                      "content": "Connect"
+                      "content": "Networking"
                     },
                     "zMyh7": {
-                      "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work."
+                      "content": "We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector."
                     }
                   }
                 },
@@ -1588,13 +1600,13 @@
                   "name": "tabWtP2",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "megaphone"
+                      "iconFontName": "eye"
                     },
                     "NQWlj": {
-                      "content": "Share"
+                      "content": "Visibility"
                     },
                     "zMyh7": {
-                      "content": "Weekly posts covering CSA contract announcements, DND procurement opportunities, job openings, policy updates, scholarships, and internships."
+                      "content": "We create visibility for Black Canadians already doing the work — profiling engineers and technologists at CSA, MDA, Telesat, CAE, L3Harris, DND, and beyond."
                     }
                   }
                 },
@@ -1606,13 +1618,13 @@
                   "name": "tabWtP3",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "star"
+                      "iconFontName": "route"
                     },
                     "NQWlj": {
-                      "content": "Elevate"
+                      "content": "Pipeline"
                     },
                     "zMyh7": {
-                      "content": "Spotlights on Black Canadians already in the sector. Making visible the people and careers that the industry rarely highlights."
+                      "content": "We open pathways for the next generation to enter and thrive — connecting students to mentors, surfacing scholarships, internships, and procurement opportunities."
                     }
                   }
                 }
@@ -1769,7 +1781,8 @@
                   "lineHeight": 1.6,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -1853,7 +1866,8 @@
                   "content": "Currently building software for Canadarm3 on NASA's Lunar Gateway program. Started Black Space Canada because this community should have existed years ago.",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 14
+                  "fontSize": 14,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -1941,7 +1955,8 @@
                       "fill": "#8A8A9A",
                       "content": "hello@blackspace.ca",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     },
                     {
                       "type": "frame",
@@ -1967,7 +1982,8 @@
                           "fill": "#8A8A9A",
                           "content": "LinkedIn",
                           "fontFamily": "Inter",
-                          "fontSize": 12
+                          "fontSize": 12,
+                          "fontWeight": "normal"
                         }
                       ]
                     }
@@ -1985,7 +2001,8 @@
               "content": "Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.",
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 11
+              "fontSize": 11,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -1994,7 +2011,8 @@
               "fill": "#3A3A4A",
               "content": "© 2026 Black Space Canada. All rights reserved.",
               "fontFamily": "Inter",
-              "fontSize": 11
+              "fontSize": 11,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -2148,11 +2166,12 @@
               "fill": "#8A8A9A",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "A community for Black Canadian engineers, scientists, and technologists building Canada's space and defence systems.",
+              "content": "Connecting, elevating, and growing the community of Black Canadian engineers, scientists, and technologists in space and defence.",
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 16
+              "fontSize": 16,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -2237,11 +2256,12 @@
               "fill": "#8A8A9A",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "Canada's space sector supports over 12,000 jobs and is growing fast. Canadarm3, Lunar Gateway, defence modernization — billions in investment are reshaping the industry.",
+              "content": "Canada's space and defence sector is growing fast — Canadarm3, Lunar Gateway, defence modernization. Black Canadians are already part of this work, but dedicated networks don't exist yet.",
               "lineHeight": 1.7,
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -2291,7 +2311,7 @@
               "fill": "#FFFFFF",
               "textGrowth": "fixed-width",
               "width": "fill_container",
-              "content": "Many of us have been \"the only one in the room.\" This community changes that.",
+              "content": "We're changing that — building the networks, the visibility, and the pipeline this community needs to thrive.",
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
@@ -2494,13 +2514,13 @@
                   "name": "mobWtP1",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "users"
+                      "iconFontName": "network"
                     },
                     "NQWlj": {
-                      "content": "Connect"
+                      "content": "Networking"
                     },
                     "zMyh7": {
-                      "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work."
+                      "content": "We build professional networks connecting Black Canadian engineers, scientists, and technologists in space and defence."
                     }
                   }
                 },
@@ -2512,13 +2532,13 @@
                   "name": "mobWtP2",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "megaphone"
+                      "iconFontName": "eye"
                     },
                     "NQWlj": {
-                      "content": "Share"
+                      "content": "Visibility"
                     },
                     "zMyh7": {
-                      "content": "Weekly posts covering CSA contracts, DND procurement, job openings, scholarships, and internships."
+                      "content": "We create visibility for Black Canadians already doing the work at CSA, MDA, Telesat, DND, and beyond."
                     }
                   }
                 },
@@ -2530,13 +2550,13 @@
                   "name": "mobWtP3",
                   "descendants": {
                     "pXZjX": {
-                      "iconFontName": "star"
+                      "iconFontName": "route"
                     },
                     "NQWlj": {
-                      "content": "Elevate"
+                      "content": "Pipeline"
                     },
                     "zMyh7": {
-                      "content": "Spotlights on Black Canadians already in the sector. Making visible the people the industry rarely highlights."
+                      "content": "We open pathways for the next generation — mentors, scholarships, internships, and procurement opportunities."
                     }
                   }
                 }
@@ -2694,7 +2714,8 @@
                   "lineHeight": 1.6,
                   "textAlign": "center",
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 }
               ]
             }
@@ -2772,7 +2793,8 @@
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -2850,7 +2872,8 @@
                   "fill": "#8A8A9A",
                   "content": "hello@blackspace.ca",
                   "fontFamily": "Inter",
-                  "fontSize": 12
+                  "fontSize": 12,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -2876,7 +2899,8 @@
                       "fill": "#8A8A9A",
                       "content": "LinkedIn",
                       "fontFamily": "Inter",
-                      "fontSize": 12
+                      "fontSize": 12,
+                      "fontWeight": "normal"
                     }
                   ]
                 }
@@ -2892,7 +2916,8 @@
               "content": "Black Space Canada is an independent community initiative. Not affiliated with any employer or government agency.",
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 10
+              "fontSize": 10,
+              "fontWeight": "normal"
             },
             {
               "type": "text",
@@ -2901,7 +2926,8 @@
               "fill": "#3A3A4A",
               "content": "© 2026 Black Space Canada",
               "fontFamily": "Inter",
-              "fontSize": 10
+              "fontSize": 10,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -3193,7 +3219,8 @@
                   "fill": "#8A8A9A",
                   "content": "Check your email for next steps.",
                   "fontFamily": "Inter",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -3280,7 +3307,8 @@
                   "content": "Check your inbox for your welcome email or contact hello@blackspace.ca.",
                   "lineHeight": 1.5,
                   "fontFamily": "Inter",
-                  "fontSize": 13
+                  "fontSize": 13,
+                  "fontWeight": "normal"
                 }
               ]
             },
@@ -3325,7 +3353,8 @@
               "width": "fill_container",
               "content": "We use analytics to improve your experience. No personal data is sold.",
               "fontFamily": "Inter",
-              "fontSize": 14
+              "fontSize": 14,
+              "fontWeight": "normal"
             },
             {
               "type": "frame",
@@ -3419,7 +3448,8 @@
                   "content": "Are you sure you want to unsubscribe from Black Space Canada? You'll stop receiving community updates and event invitations.",
                   "lineHeight": 1.6,
                   "fontFamily": "Inter",
-                  "fontSize": 15
+                  "fontSize": 15,
+                  "fontWeight": "normal"
                 },
                 {
                   "type": "frame",
@@ -3545,7 +3575,8 @@
               "lineHeight": 1.6,
               "textAlign": "center",
               "fontFamily": "Inter",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             },
             {
               "type": "rectangle",
@@ -3963,7 +3994,8 @@
               "fill": "#52526A",
               "content": "Enter your full name",
               "fontFamily": "Inter",
-              "fontSize": 15
+              "fontSize": 15,
+              "fontWeight": "normal"
             }
           ]
         }
@@ -4017,7 +4049,8 @@
           "content": "Writing flight software, ground systems, C2 platforms, simulations",
           "lineHeight": 1.5,
           "fontFamily": "Inter",
-          "fontSize": 14
+          "fontSize": 14,
+          "fontWeight": "normal"
         }
       ]
     },
@@ -4056,7 +4089,7 @@
               "name": "pillarIconInner",
               "width": 24,
               "height": 24,
-              "iconFontName": "users",
+              "iconFontName": "network",
               "iconFontFamily": "lucide",
               "fill": "#4F9CF7"
             }
@@ -4067,7 +4100,7 @@
           "id": "NQWlj",
           "name": "pillarTitle",
           "fill": "#FFFFFF",
-          "content": "Connect",
+          "content": "Networking",
           "fontFamily": "Sora",
           "fontSize": 22,
           "fontWeight": "700",
@@ -4080,10 +4113,11 @@
           "fill": "#8A8A9A",
           "textGrowth": "fixed-width",
           "width": "fill_container",
-          "content": "Quarterly virtual meetups. No slides, no keynotes — just real conversations between people doing the work.",
+          "content": "We build professional networks that connect Black Canadian engineers, scientists, and technologists across the space and defence sector.",
           "lineHeight": 1.6,
           "fontFamily": "Inter",
-          "fontSize": 15
+          "fontSize": 15,
+          "fontWeight": "normal"
         }
       ]
     }
